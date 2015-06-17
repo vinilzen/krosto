@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="favicon.gif" rel="icon" />
+    <title>Doctu.ru – Справочник пациента 123</title>
+    <meta content="width=device-width" name="viewport" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic-ext" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-modal.css" rel="stylesheet" />
+    <!--[if lte IE 9] link href="css/ie9.css" rel="stylesheet"--><!--[if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar" role="navigation">
+        <div class="navbar-header">
+          <span class="navbar-brand" title="Doctu.ru"><img alt="doctu.ru" src="img/logo_doctu.png" /></span>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a class="hand" href="/partners.html">Партнерство для клиник</a>
+            </li>
+            <li>
+              <a href="/about.html">О проекте</a>
+            </li>
+            <li class="city-changer">
+              <a class="showCities" href="#"> Санкт-Петербург</a>
+              <ul>
+                <li class="selected">
+                  <a href="http://doctu.ru">Санкт-Петербург</a>
+                </li>
+                <li>
+                  <a href="http://msk.doctu.ru">Москва</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <h1>
+            Запись на прием к врачу<small><img alt="" src="img/free.png" /></small>
+          </h1>
+          <div id="mainSearch">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active">
+                <a data-toggle="tab" href="#tab1"> Врачи</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab2"> Клиники</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab3"> Диагностика</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#tab4"> Запись по ОМС</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                <form class="form-inline" role="form">
+                  <div class="row">
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg" data-placeholder="Cпециализация врача">
+                        <option value="1"></option>
+                        <option value="akusher">
+                          Акушер
+                        </option>
+                        <option value="akusher-ginekolog">
+                          Акушер-гинеколог
+                        </option>
+                        <option value="allergolog">
+                          Аллерголог
+                        </option>
+                        <option value="angioxirurg">
+                          Ангиохирург
+                        </option>
+                        <option value="androlog">
+                          Андролог
+                        </option>
+                        <option value="anesteziolog">
+                          Анестезиолог
+                        </option>
+                        <option value="apiterapevt">
+                          Апитерапевт
+                        </option>
+                        <option value="aritmolog">
+                          Аритмолог
+                        </option>
+                        <option value="artrolog">
+                          Артролог
+                        </option>
+                        <option value="venerolog">
+                          Венеролог
+                        </option>
+                        <option value="vrach-vosstanovitelnoj-mediczinyi">
+                          Врач восстановительной медицины
+                        </option>
+                        <option value="vrach-klinicheskoj-lab-rii">
+                          Врач клинической лаборатории
+                        </option>
+                        <option value="vrach-mrt">
+                          Врач МРТ
+                        </option>
+                        <option value="vrach-obshhej-praktiki">
+                          Врач общей практики
+                        </option>
+                        <option value="vrach-po-sportivn.-mediczine">
+                          Врач по спортивной медицине
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg" data-placeholder="Район или метро">
+                        <option value="1"></option>
+                        <option value="1">
+                          1
+                        </option>
+                        <option value="1">
+                          2
+                        </option>
+                        <option value="1">
+                          3
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-2">
+                      <button class="btn btn-primary btn-fr" type="submit"> Найти</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="tab2">
+                <form class="form-inline" role="form">
+                  <div class="row">
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Cпециализация клиники
+                        </option>
+                        <option value="2">
+                          2
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Район или метро
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-2">
+                      <button class="btn btn-primary btn-fr" type="submit"> Найти</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="tab3">
+                <form class="form-inline" role="form">
+                  <div class="row">
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Cпециализация Диагностика
+                        </option>
+                        <option value="2">
+                          2
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Район или метро
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-2">
+                      <button class="btn btn-primary btn-fr" type="submit"> Найти</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="tab4">
+                <form class="form-inline" role="form">
+                  <div class="row">
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Запись по ОМС
+                        </option>
+                        <option value="2">
+                          2
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <select class="form-control input-lg">
+                        <option value="1">
+                          Район или метро
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group col-xs-2">
+                      <button class="btn btn-primary btn-fr" type="submit"> Найти</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="counter">
+            <span class="btn btn-default btn-lg disabled" role="button">4</span><span class="btn btn-default btn-lg disabled" role="button">4</span><span class="btn btn-default btn-lg disabled" role="button">6</span><span class="btn btn-default btn-lg disabled" role="button">4</span><span class="btn btn-default btn-lg disabled" role="button">1</span><span class="btn btn-default btn-lg disabled" role="button"> 6</span>
+          </p>
+          <p class="counter_descr">
+            Пациентов уже записалось к врачу
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">
+              Специалисты
+            </h2>
+            <p class="text-center lead">
+              На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города. Из них вы можете выбрать врача отвечающего имменно Вашим требованиям
+            </p>
+            <ul class="list-unstyled specialists">
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">1</span>
+                    </dt>
+                    <dd>
+                      <strong>Акушер</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">123</span>
+                    </dt>
+                    <dd>
+                      <strong>Акушер-гинеколог</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">1</span>
+                    </dt>
+                    <dd>
+                      <strong>Lorem.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">2</span>
+                    </dt>
+                    <dd>
+                      <strong>Nisi.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">43</span>
+                    </dt>
+                    <dd>
+                      <strong>Abribviatura due.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">4</span>
+                    </dt>
+                    <dd>
+                      <strong>Repellat.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">25</span>
+                    </dt>
+                    <dd>
+                      <strong>Repudiandae!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">6</span>
+                    </dt>
+                    <dd>
+                      <strong>Aliquam!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">7</span>
+                    </dt>
+                    <dd>
+                      <strong>Consequatur?</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">8</span>
+                    </dt>
+                    <dd>
+                      <strong>Minima.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">89</span>
+                    </dt>
+                    <dd>
+                      <strong>Quasi.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">10</span>
+                    </dt>
+                    <dd>
+                      <strong>Aut.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">1</span>
+                    </dt>
+                    <dd>
+                      <strong>Neque.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">212</span>
+                    </dt>
+                    <dd>
+                      <strong>Quo.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">13</span>
+                    </dt>
+                    <dd>
+                      <strong>Quibusdam?</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">14</span>
+                    </dt>
+                    <dd>
+                      <strong>Artbeque.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">16</span>
+                    </dt>
+                    <dd>
+                      <strong>Lorem.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">115</span>
+                    </dt>
+                    <dd>
+                      <strong>Ducimus.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">113</span>
+                    </dt>
+                    <dd>
+                      <strong>Ad.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">112</span>
+                    </dt>
+                    <dd>
+                      <strong>Architecto.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">111</span>
+                    </dt>
+                    <dd>
+                      <strong>Iusto.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">11</span>
+                    </dt>
+                    <dd>
+                      <strong>Deserunt.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">219</span>
+                    </dt>
+                    <dd>
+                      <strong>Odio.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">18</span>
+                    </dt>
+                    <dd>
+                      <strong>Atque.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">7</span>
+                    </dt>
+                    <dd>
+                      <strong>Soluta?</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">16</span>
+                    </dt>
+                    <dd>
+                      <strong>Facere!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">15</span>
+                    </dt>
+                    <dd>
+                      <strong>Asperiores!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">14</span>
+                    </dt>
+                    <dd>
+                      <strong>Quibusdam.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">13</span>
+                    </dt>
+                    <dd>
+                      <strong>Saepe!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">12</span>
+                    </dt>
+                    <dd>
+                      <strong>Velit!</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">11</span>
+                    </dt>
+                    <dd>
+                      <strong>Incidunt.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">11</span>
+                    </dt>
+                    <dd>
+                      <strong>Гастроэнтеролог</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">11</span>
+                    </dt>
+                    <dd>
+                      <strong>Венеролог</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">14</span>
+                    </dt>
+                    <dd>
+                      <strong>Quibusdam.</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <dl class="dl-horizontal">
+                    <dt>
+                      <span class="label label-success">11</span>
+                    </dt>
+                    <dd>
+                      <strong>Андролог</strong>
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container map">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="btn btn-default">
+              Искать на карте
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container drk borderbot">
+        <div class="container container1200">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                Как это работает
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row mb30">
+            <div class="col-xs-4 text-center">
+              <p>
+                <a href=""><span class="ico_big ico1"></span></a>
+              </p>
+              <h3>
+                <a href=""> Онлайн запись на прием</a>
+              </h3>
+              <p>
+                Клиники в режиме онлайн обрабатывают Ваши заявки на запись к специалистам.
+              </p>
+            </div>
+            <div class="col-xs-4 text-center">
+              <p>
+                <a href=""><span class="ico_big ico2"></span></a>
+              </p>
+              <h3>
+                <a href=""> Обширная база врачей</a>
+              </h3>
+              <p>
+                На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города.
+              </p>
+            </div>
+            <div class="col-xs-4 text-center">
+              <p>
+                <a href=""><span class="ico_big ico3"></span></a>
+              </p>
+              <h3>
+                <a href=""> Отзывы и рейтинг врачей</a>
+              </h3>
+              <p>
+                Мы собираем отзывы только реальных пациентов и на их основе присваиваем рейтинг врачам и клиникам.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container borderbot">
+        <div class="container1200 container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                Лучшие клиники
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 text-center">
+              <p class="img-center">
+                <a href="#"><img alt="" src="img/clin-ico1.jpg" /></a>
+              </p>
+              <div class="caption">
+                <h3>
+                  <a href="#"> ОС-ТАВИГО</a>
+                </h3>
+                <div class="clinic-request" style="display:none;">
+                  <div class="star-rating">
+                    <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
+                  </div>
+                  <div class="rating">
+                    4.9
+                  </div>
+                </div>
+                <div class="clearfix visible-xs-block visible-sm-block"></div>
+              </div>
+            </div>
+            <div class="col-xs-3 text-center">
+              <p class="img-center">
+                <a href="#"><img alt="" src="img/clin-ico2.jpg" /></a>
+              </p>
+              <div class="caption">
+                <h3>
+                  <a href=""> МедПросвет</a>
+                </h3>
+                <div class="clinic-request" style="display:none;">
+                  <div class="star-rating">
+                    <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
+                  </div>
+                  <div class="rating">
+                    4.9
+                  </div>
+                </div>
+                <div class="clearfix visible-xs-block visible-sm-block"></div>
+              </div>
+            </div>
+            <div class="col-xs-3 text-center">
+              <p class="img-center">
+                <a href="#"><img alt="" src="img/clin-ico3.jpg" /></a>
+              </p>
+              <div class="caption">
+                <h3>
+                  <a href=""> СМ-Клиника</a>
+                </h3>
+                <div class="clinic-request" style="display:none;">
+                  <div class="star-rating">
+                    <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
+                  </div>
+                  <div class="rating">
+                    4.9
+                  </div>
+                </div>
+                <div class="clearfix visible-xs-block visible-sm-block"></div>
+              </div>
+            </div>
+            <div class="col-xs-3 text-center">
+              <p class="img-center">
+                <a href="#"><img alt="" src="img/clin-ico4.jpg" /></a>
+              </p>
+              <div class="caption">
+                <h3>
+                  <a href=""> Гранж</a>
+                </h3>
+                <div class="clinic-request" style="display:none;">
+                  <div class="star-rating">
+                    <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
+                  </div>
+                  <div class="rating">
+                    4.9
+                  </div>
+                </div>
+                <div class="clearfix visible-xs-block visible-sm-block"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 text-center">
+              <p>
+                <a class="btn btn-gr btn-lg" href="#"> Все клиники</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container drk borderbot">
+        <div class="container container1200">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                Отзывы о врачах
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+              <!--Wrapper for slides-->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+                      <div class="media">
+                        <a class="pull-left" href="#"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></a>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href=""><strong>Маслов</strong> Александр Сергеевич</a>
+                          </h4>
+                          <p class="spec">
+                            <span>Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог</span>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="text-center">
+                        <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span><span class="author"><strong>— Николай Рец,</strong>22.03.2014</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+                      <div class="media">
+                        <a class="pull-left" href="#"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></a>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href=""><strong>Маслов</strong>Александр Сергеевич</a>
+                          </h4>
+                          <p class="spec">
+                            <span>Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог</span>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="text-center">
+                        <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span><span class="author"><strong>— Николай Рец,</strong>22.03.2014</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+                      <div class="media">
+                        <a class="pull-left" href="#"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></a>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href=""><strong>Маслов</strong>Александр Сергеевич</a>
+                          </h4>
+                          <p class="spec">
+                            <span>Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог</span>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="text-center">
+                        <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span><span class="author"><strong>— Николай Рец,</strong>22.03.2014</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Controls--><a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button"><span class="arrow-left"></span></a><a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button"><span class="arrow-right"></span></a>
+            </div>
+            <div class="col-xs-12 text-center">
+              <p>
+                <a class="btn btn-gr btn-lg" href="#"> Все врачи</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container borderbot">
+        <div class="container1200 container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                СМИ о нас
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 text-left">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p class="itl">
+                    XIV столетие. В Европе свирепствует чума. Виновницей смертоносной беды признают беззащитную девушку, подозревая ее в колдовстве. Умирающий кардинал просит рыцаря Бэймена доставить ведьму в далекое аббатство, где ее чары должны быть разрушены. Шестеро верховых и повозка с
+                  </p>
+                  <div class="arrow"></div>
+                </div>
+              </div>
+              <p class="text-center smi_logo">
+                <a href="http://metronews.ru" target="_blank"><img alt="" src="img/metro_logo.png" /><span>www.metronews.ru</span></a>
+              </p>
+            </div>
+            <div class="col-xs-4 text-left">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p class="itl">
+                    Даг — простой вышибала, работающий в провинциальном баре. Однажды, ввязавшись в драку на хоккейном матче с одним из игроков, он попадает в поле зрения тренера команды мастеров. Ему срочно нужен игрок, который сможет защитить на льду ведущего нападающего клуба.
+                  </p>
+                  <div class="arrow"></div>
+                </div>
+              </div>
+              <p class="text-center smi_logo">
+                <a href="http://spbdnevnik.ru" target="_blank"><img alt="" src="img/logo.gif" /><span>www.spbdnevnik.ru</span></a>
+              </p>
+            </div>
+            <div class="col-xs-4 text-left">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p class="itl">
+                    Два лучших выпускника полицейской академии оказались по разные стороны баррикады: один из них — агент мафии в рядах правоохранительных органов, другой — «крот», внедрённый в мафию. Каждый считает своим долгом обнаружить и уничтожить противника, постоянная жизнь другой волны.»
+                  </p>
+                  <div class="arrow"></div>
+                </div>
+              </div>
+              <p class="text-center smi_logo">
+                <a href="http://metronews.ru" target="_blank"><img alt="" src="img/metro_logo.png" /><span>www.metronews.ru</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container drk borderbot">
+        <div class="container1200 container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                Полезная информация
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row fixh">
+            <div class="col-xs-4 text-left">
+              <p class="mdl">
+                Для современного человека<strong>запись к врачу через интернет</strong>является необходимой в быту услугой. Ведь такой сервис решает вопросы экономии времени и сохранения душевного комфорта. Однако среди услуг, которые предлагает обычная<strong>поликлиника, запись к врачу онлайн</strong>значится крайне редко. Сайт<a href="http://www.doctu.ru"> www.doctu.ru</a>готов взять на себя подобные заботы. Дополнительно сайт предоставляет бесплатный доступ к самой обширной базе врачей, содержащей полную информацию о каждом докторе города.
+              </p>
+            </div>
+            <div class="col-xs-4 text-left">
+              <p class="mdl">
+                Одна из проблем, с которой сталкивается каждый, кто пробовал<strong>самозапись к врачу</strong>это ненадежность сервиса. Неизвестно, куда попадает заявка, произошла ли запись. На<a href="http://www.doctu.ru"> www.doctu.ru</a>же все прозрачно. Сразу после<strong>онлайн записи</strong>пациенту звонит администратор клиники и подтверждает время. Нет причин переживать о приеме: он обязательно состоится. После приема пользователь может оставить свой отзыв о враче: именно таким образом формируется рейтинг докторов на сайте. Отзывы других пациентов доступны для чтения.
+              </p>
+            </div>
+            <div class="col-xs-4 text-left">
+              <p class="mdl">
+                Некоторые пациенты<strong>записываются к врачам</strong>только бесплатных поликлиник, тогда как иные предпочитают частные клиники. Другие сервисы не могут обеспечить пользователям<strong>онлайн запись</strong>в те и другие учреждения. Однако с помощью данного сайта Вы можете<strong>записаться к врачу</strong>как на платный, так и на бесплатный прием. Так<strong>запись через интернет</strong>окончательно стирает границы технических возможностей и превращается в удобный повседневный инструмент.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <p>
+                <span class="all_inf" href="#"> Показать полностью</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container green">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="btn btn-default">
+              Записаться к врачу
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="copy">
+          <p>
+            &copy; 2012-2014 Doctu.ru &mdash; запись к врачу в <a href="http://msk.doctu.ru">Москве</a>, <a href="http://doctu.ru">Санкт-Петербурге</a>
+          </p>
+        </div>
+        <div class="text-right links">
+          <ul class="list-inline">
+            <li>
+              <a href="library">Справочник пациента</a>
+            </li>
+            <li>
+              <a href="terms">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

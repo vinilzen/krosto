@@ -1,0 +1,87 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .jumbotron.partners
+      .container.text-center
+        h1 Партнерство для клиник Санкт-Петербурга
+        p.lead Добавить клинику на Doctu.ru легко, быстро и совершенно бесплатно!
+        p
+          a.btn.btn-success href="#form" role="button"  Добавить клинику
+        p.text-center
+          img.mac alt="" height="460" src="img/mac.png" width="760" /
+    .container-fluid.gray
+      .row
+        .container.mw980
+          .col-xs-4
+            .media
+              .pull-left
+                img.media-object alt="..." height="60" src="img/man.png" width="60" /
+              .media-body
+                h4.media-heading 30000
+                p пациентов за месяц
+          .col-xs-4
+            .media.last
+              .pull-left
+                img.media-object alt="..." height="60" src="img/shop.png" width="60" /
+              .media-body
+                h4.media-heading 450
+                p клиник-партнеров
+          .col-xs-4
+            .media
+              .pull-left
+                img.media-object alt="..." height="52" src="img/icon_add.png" width="60" /
+              .media-body
+                h4.media-heading 7000
+                p отзывов о врачах и клиниках
+    .container.borderbot.advantages
+      .row
+        .col-xs-12
+          h2.text-center.plus Преимущества работы с Doctu.ru
+          p.text-center.lead.plus_lead На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города.  Из них Вы можете выбрать врача, отвечающего именно Вашим требованиям.
+      .row.mb30.plus_example
+        .col-xs-4.text-center
+          p.center-img
+            img alt="" height="104" src="img/graph.png" width="149" /
+          h3 Увеличение прибыли
+          p Мы приводим к вам пациентов и никакого вступительного взноса или абонентских затрат.
+        .col-xs-4.text-center
+          p.center-img
+            img alt="" height="88" src="img/rate.png" width="136" /
+          h3 Полный контроль
+          p Управляйте ценами и расписанием врачей, а пациенты платят вам напрямую.
+        .col-xs-4.text-center
+          p.center-img
+            img alt="" height="83" src="img/search.png" width="147" /
+          h3 Большая аудитория
+          p Пациенты ищут врачей и клиники у нас на сайте, с целью записаться на прием или почитать подтвержденные отзывы.
+    #form.container-fluid.drk-blue
+      .row
+        .container
+          .col-xs-12.text-center
+            h2.text-center Присоединяйтесь к нам прямо сейчас
+            p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+            .col-xs-6.col-xs-offset-3
+              form action="partners" method="POST" role="form" 
+                input name="formid" type="hidden" value="partner-form" /
+                .form-group
+                  input.form-control name="clName" placeholder=("Название клиники*") type="text" /
+                .form-group
+                  input.form-control name="clSpec" placeholder="Сайт" type="text" /
+                .form-group
+                  input.form-control name="clCity" placeholder="Город*" type="text" /
+                .form-group
+                  input.form-control name="userNs" placeholder=("Ваше имя*") type="text" /
+                .form-group
+                  input.form-control name="userTel" placeholder="Телефон*" type="text" /
+                .form-group
+                  textarea.form-control name="userCom" placeholder="Комментарий" rows="3" 
+                .form-group.for_captcha
+                  img src="img/securimage_show_math.png" width="99" height="40"
+                  input.form-control name="code" placeholder="Код*" type="text" /
+                  .clearfix
+                .form-group
+                  button.btn.btn-success type="submit"  Отправить заявку
+    == Slim::Template.new("footer.slim").render

@@ -1,0 +1,503 @@
+aside
+  #leftFilter
+    #accordion.panel-group
+      .panel.panel-default.open
+        .panel-heading
+          h4.panel-title
+            a data-parent="#accordion" data-toggle="collapse" href="#collapseOne" 
+              | Врачи
+              span.ico-collapse
+        #collapseOne.panel-collapse.collapse.in.lvl1
+          .panel-body
+            form role="form" 
+              .form-group
+                select#doctorSpecialitySelectLeft.form-control data-placeholder="Cпециализация" name="speciality" 
+                  option value="" 
+                  option value="akusher"  Акушер
+                  option value="akusher-ginekolog"  Акушер-гинеколог
+                  option value="allergolog"  Аллерголог
+                  option value="angioxirurg"  Ангиохирург
+                  option value="androlog"  Андролог
+                  option value="anesteziolog"  Анестезиолог
+                  option value="venerolog"  Венеролог
+                  option value="vrach-klinicheskoj-lab-rii"  Врач клинической лаборатории
+                  option value="vrach-mrt"  Врач МРТ
+                  option value="vrach-obshhej-praktiki"  Врач общей практики
+                  option value="vrach-po-sportivn.-mediczine"  Врач по спортивной медицине
+                  option value="vrach-uzi"  Врач УЗИ
+                  option value="gastroehnterolog"  Гастроэнтеролог
+                  option value="gematolog"  Гематолог
+                  option value="genetik"  Генетик
+                  option value="gepatolog"  Гепатолог
+                  option value="ginekolog"  Гинеколог
+                  option value="ginekolog-reproduktolog"  Гинеколог-репродуктолог
+                  option value="ginekolog-endokrinolog"  Гинеколог-эндокринолог
+                  option value="girudoterapevt"  Гирудотерапевт
+                  option value="dermatovenerolog"  Дерматовенеролог
+                  option value="dermatokosmetolog"  Дерматокосметолог
+                  option value="dermatolog"  Дерматолог
+                  option value="dietolog"  Диетолог
+                  option value="iglorefleksoterapevt"  Иглорефлексотерапевт
+                  option value="immunolog"  Иммунолог
+                  option value="infekcionist"  Инфекционист
+                  option value="kardiolog"  Кардиолог
+                  option value="kinezoterapevt"  Кинезотерапевт
+                  option value="koloproktolog"  Колопроктолог
+                  option value="kosmetolog"  Косметолог
+                  option value="logoped"  Логопед
+                  option value="lor-otolaringolog"  Лор (отоларинголог)
+                  option value="manualnyjj-terapevt"  Мануальный терапевт
+                  option value="mammolog"  Маммолог
+                  option value="massazhist"  Массажист
+                  option value="mikolog"  Миколог
+                  option value="nevrolog"  Невролог
+                  option value="nefrolog"  Нефролог
+                  option value="okulist-oftalmolog"  Окулист (офтальмолог)
+                  option value="onkolog"  Онколог
+                  option value="ortoped"  Ортопед
+                  option value="osteopat"  Остеопат
+                  option value="pediatr"  Педиатр
+                  option value="proktolog"  Проктолог
+                  option value="profpatolog"  Профпатолог
+                  option value="psikhiatr"  Психиатр
+                  option value="psikholog"  Психолог
+                  option value="psikhoterapevt"  Психотерапевт
+                  option value="pulmonolog"  Пульмонолог
+                  option value="radiolog"  Радиолог
+                  option value="reanimatolog"  Реаниматолог
+                  option value="revmatolog"  Ревматолог
+                  option value="rentgenolog"  Рентгенолог
+                  option value="reproduktolog-ehko"  Репродуктолог (ЭКО)
+                  option value="refleksoterapevt"  Рефлексотерапевт
+                  option value="seksolog"  Сексолог
+                  option value="semejnyij-vrach"  Семейный врач
+                  option value="somnolog"  Сомнолог
+                  option value="stomatolog"  Стоматолог
+                  option value="stomatolog-gigienist"  Стоматолог-гигиенист
+                  option value="stomatolog-implantolog"  Стоматолог-имплантолог
+                  option value="stomatolog-ortodont"  Стоматолог-ортодонт
+                  option value="stomatolog-ortoped"  Стоматолог-ортопед
+                  option value="stomatolog-parodontolog"  Стоматолог-пародонтолог
+                  option value="stomatolog-terapevt"  Стоматолог-терапевт
+                  option value="stomatolog-xirurg"  Стоматолог-хирург
+                  option value="surdolog"  Сурдолог
+                  option value="terapevt"  Терапевт
+                  option value="terapevt-uchastkovyij"  Терапевт участковый
+                  option value="travmatolog"  Травматолог
+                  option value="trikholog"  Трихолог
+                  option value="uzi-specialist"  УЗИ-специалист
+                  option value="urolog"  Уролог
+                  option value="urolog-androlog"  Уролог-андролог
+                  option value="fizioterapevt"  Физиотерапевт
+                  option value="flebolog"  Флеболог
+                  option value="ftiziatr"  Фтизиатр
+                  option value="funczionalnyij-diagnost"  Фунциональный диагност
+                  option value="khirurg"  Хирург
+                  option value="xirurg-plasticheskij"  Хирург пластический
+                  option value="xirurg-sosudistyij"  Хирург сосудистый
+                  option value="xirurg-torakalnyij"  Хирург торакальный
+                  option value="xirurg-oftalmolog"  Хирург-офтальмолог
+                  option value="xirurg-travmatolog"  Хирург-травматолог
+                  option value="xirurg-flebolog"  Хирург-флеболог
+                  option value="xirurg-chelyustno-liczevoj"  Хирург челюстно-лицевой
+                  option value="embriolog"  Эмбриолог
+                  option value="ehndokrinolog"  Эндокринолог
+                  option value="endoskopist"  Эндоскопист
+              .form-group multiple="" 
+                select#doctorMetroSelectLeft.form-control data-placeholder=("Район или метро") multiple="" name="metro[]" 
+                  optgroup label="Районы" 
+                    option value="" 
+                    option value="czao"  ЦАО
+                    option value="svao"  СВАО
+                    option value="vao"  ВАО
+                    option value="yuvao"  ЮВАО
+                    option value="zao"  ЗАО
+                    option value="szao"  СЗАО
+                  optgroup label="Метро" 
+                    option value="" 
+                    option value="alekseevskaya"  Алексеевская
+                    option value="babushkinskaya"  Бабушкинская
+                    option value="belorusskaya"  Белорусская
+                    option value="botanicheskij-sad"  Ботанический сад
+                    option value="bratislavskaya"  Братиславская
+                    option value="bulvar-dmitriya-donskogo"  Бульвар Дмитрия Донского
+                    option value="buninskaya-alleya"  Бунинская аллея
+                    option value="vdnx"  ВДНХ
+                    option value="vladyikino"  Владыкино
+                    option value="vodnyij-stadion"  Водный стадион
+                    option value="vojkovskaya"  Войковская
+                    option value="novocherkasskaya"  Новочеркасская
+                    option value="dinamo"  Динамо
+                    option value="kunczevskaya"  Кунцевская
+                    option value="lermontovskij-prospekt"  Лермонтовский проспект
+                    option value="lyublino"  Люблино
+                    option value="marina-roshha"  Марьина роща
+                    option value="mayakovskaya-msk"  Маяковская
+                    option value="medvedkovo"  Медведково
+                    option value="mendeleevskaya"  Менделеевская
+                    option value="mitino"  Митино
+                    option value="molodyozhnaya"  Молодёжная
+                    option value="novogireevo"  Новогиреево
+                    option value="novokuzneczkaya"  Новокузнецкая
+                    option value="oxotnyij-ryad"  Охотный ряд
+                    option value="paveleczkaya"  Павелецкая
+                    option value="park-pobedyi-msk"  Парк Победы
+                    option value="pervomajskaya"  Первомайская
+                    option value="petrovsko-razumovskaya"  Петровско-Разумовская
+                    option value="planernaya"  Планерная
+                    option value="pushkinskaya"  Пушкинская
+                    option value="rechnoj-vokzal"  Речной вокзал
+                    option value="rizhskaya"  Рижская
+                    option value="savyolovskaya"  Савёловская
+                    option value="sviblovo"  Свиблово
+                    option value="slavyanskij-bulvar"  Славянский бульвар
+                    option value="tverskaya"  Тверская
+                    option value="tekstilshhiki"  Текстильщики
+                    option value="tretyakovskaya"  Третьяковская
+                    option value="tushinskaya"  Тушинская
+                    option value="ulicza-gorchakova"  Улица Горчакова
+                    option value="ulicza-starokachalovskaya"  Улица Старокачаловская
+                    option value="shhyolkovskaya"  Щёлковская
+              .form-group
+                input#exampleInputEmail1.form-control placeholder=("ФИО врача") type="text" /
+              hr/
+              .form-group
+                select.form-control.input-lg
+                  option Пол врача
+                  option Не важно
+                  option М
+                  option Ж
+              .form-group
+                select.form-control
+                  option Детск./Взросл.
+                  option Не важно
+                  option Да
+                  option Нет
+              .form-group.checkbox-slim
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Запись по телефону
+              .form-group.checkbox-slim
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Только с отзывами
+              .form-group
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Выезд на дом
+              button.btn.btn-block.btn-primary type="button"  Найти
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            a data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" 
+              | Клиники
+              span.ico-collapse
+        #collapseTwo.panel-collapse.collapse.lvl1
+          .panel-body
+            form role="form" 
+              .form-group
+                select#clinicSpecialitySelectLeft.form-control data-placeholder="Cпециализация" name="speciality" 
+                  option value="" 
+                  option value="akusherstvo"  Акушерство
+                  option value="allergologija"  Аллергология
+                  option value="andrologija"  Андрология
+                  option value="anesteziologija-i-reanimatologija"  Анестезиология и реаниматология
+                  option value="vakcinacija"  Вакцинация
+                  option value="vertebrologija"  Вертебрология
+                  option value="gastroehnterologija"  Гастроэнтерология
+                  option value="gematologija"  Гематология
+                  option value="gepatologija"  Гепатология
+                  option value="ginekologija"  Гинекология
+                  option value="girudoterapija"  Гирудотерапия
+                  option value="dermatovenerologija"  Дерматовенерология
+                  option value="diagnostika"  Диагностика
+                  option value="kompjuternaja-tomografija-kt"  &nbsp;&nbsp;&nbsp;&nbsp; Компьютерная томография (КТ)
+                  option value="magnito-rezonansnaja-tomografija-mrt"  &nbsp;&nbsp;&nbsp;&nbsp; Магнитно-резонансная томография (МРТ)
+                  option value="rentgen"  &nbsp;&nbsp;&nbsp;&nbsp; Рентген
+                  option value="ultrazvukovoe-issledovanie-uzi"  &nbsp;&nbsp;&nbsp;&nbsp; Ультразвуковое исследование (УЗИ)
+                  option value="ehlektrokardiografija-ehkg"  &nbsp;&nbsp;&nbsp;&nbsp; Электрокардиография (ЭКГ)
+                  option value="ehlektroehncefalogramma-ehehg"  &nbsp;&nbsp;&nbsp;&nbsp; Электроэнцефалограмма (ЭЭГ)
+                  option value="ehndoskopicheskaja-ehzofagogastroduodenoskopija-ehfgds"  &nbsp;&nbsp;&nbsp;&nbsp; Эндоскопическая эзофагогастродуоденоскопия (ЭФГДС)
+                  option value="ehkhokardiografija-ehkhokg"  &nbsp;&nbsp;&nbsp;&nbsp; Эхокардиография (ЭхоКГ)
+                  option value="dietologija"  Диетология
+                  option value="immunologija"  Иммунология
+                  option value="kardiologija"  Кардиология
+                  option value="kardiokhirurgija"  Кардиохирургия
+                  option value="kosmetologija"  Косметология
+                  option value="laboratornaja-diagnostika"  Лабораторная диагностика
+                  option value="logopedija"  Логопедия
+                  option value="lfk"  ЛФК
+                  option value="mammologija"  Маммология
+                  option value="manualnaja-terapija"  Мануальная терапия
+                  option value="massazh"  Массаж
+                  option value="nevrologija"  Неврология
+                  option value="nefrologija"  Нефрология
+                  option value="onkologija"  Онкология
+                  option value="otolaringologija-lor"  Отоларингология (ЛОР)
+                  option value="oftalmologija"  Офтальмология
+                  option value="pediatrija"  Педиатрия
+                  option value="plasticheskaja-khirurgija"  Пластическая хирургия
+                  option value="proktologija"  Проктология
+                  option value="pulmonologija"  Пульмонология
+                  option value="revmatologija"  Ревматология
+                  option value="refleksoterapija"  Рефлексотерапия
+                  option value="stomatologija"  Стоматология
+                  option value="gigiena-i-profilaktika"  &nbsp;&nbsp;&nbsp;&nbsp;Гигиена и профилактика
+                  option value="detskaja-stomatologija"  &nbsp;&nbsp;&nbsp;&nbsp;Детская стоматология
+                  option value="implantologija"  &nbsp;&nbsp;&nbsp;&nbsp;Имплантология
+                  option value="ortodontija"  &nbsp;&nbsp;&nbsp;&nbsp;Ортодонтия
+                  option value="ortopedicheskaja-stomatologija"  &nbsp;&nbsp;&nbsp;&nbsp;Ортопедическая стоматология
+                  option value="terapija"  Терапия
+                  option value="travmatologija-i-ortopedija"  Травматология и ортопедия
+                  option value="urologija"  Урология
+                  option value="flebologija"  Флебология
+                  option value="khirurgija"  Хирургия
+                  option value="ehndokrinologija"  Эндокринология
+                  option value="ehndoskopija"  Эндоскопия
+              .form-group
+                select#clinicSpecialitySelectLeft.form-control data-placeholder=("Район или метро") multiple="" name="metro[]" style=("display: none;") 
+                  optgroup label="Районы" 
+                    option value="" 
+                    option value="czao"  ЦАО
+                    option value="svao"  СВАО
+                    option value="vao"  ВАО
+                    option value="yuvao"  ЮВАО
+                    option value="zao"  ЗАО
+                    option value="szao"  СЗАО
+                  optgroup label="Метро" 
+                    option value="" 
+                    option value="alekseevskaya"  Алексеевская
+                    option value="babushkinskaya"  Бабушкинская
+                    option value="belorusskaya"  Белорусская
+                    option value="botanicheskij-sad"  Ботанический сад
+                    option value="bratislavskaya"  Братиславская
+                    option value="bulvar-dmitriya-donskogo"  Бульвар Дмитрия Донского
+                    option value="buninskaya-alleya"  Бунинская аллея
+                    option value="vdnx"  ВДНХ
+                    option value="vladyikino"  Владыкино
+                    option value="vodnyij-stadion"  Водный стадион
+                    option value="vojkovskaya"  Войковская
+                    option value="novocherkasskaya"  Новочеркасская
+                    option value="dinamo"  Динамо
+                    option value="kunczevskaya"  Кунцевская
+                    option value="lermontovskij-prospekt"  Лермонтовский проспект
+                    option value="lyublino"  Люблино
+                    option value="marina-roshha"  Марьина роща
+                    option value="mayakovskaya-msk"  Маяковская
+                    option value="medvedkovo"  Медведково
+                    option value="mendeleevskaya"  Менделеевская
+                    option value="mitino"  Митино
+                    option value="molodyozhnaya"  Молодёжная
+                    option value="novogireevo"  Новогиреево
+                    option value="novokuzneczkaya"  Новокузнецкая
+                    option value="oxotnyij-ryad"  Охотный ряд
+                    option value="paveleczkaya"  Павелецкая
+                    option value="park-pobedyi-msk"  Парк Победы
+                    option value="pervomajskaya"  Первомайская
+                    option value="petrovsko-razumovskaya"  Петровско-Разумовская
+                    option value="planernaya"  Планерная
+                    option value="pushkinskaya"  Пушкинская
+                    option value="rechnoj-vokzal"  Речной вокзал
+                    option value="rizhskaya"  Рижская
+                    option value="savyolovskaya"  Савёловская
+                    option value="sviblovo"  Свиблово
+                    option value="slavyanskij-bulvar"  Славянский бульвар
+                    option value="tverskaya"  Тверская
+                    option value="tekstilshhiki"  Текстильщики
+                    option value="tretyakovskaya"  Третьяковская
+                    option value="tushinskaya"  Тушинская
+                    option value="ulicza-gorchakova"  Улица Горчакова
+                    option value="ulicza-starokachalovskaya"  Улица Старокачаловская
+                    option value="shhyolkovskaya"  Щёлковская
+              hr/
+              .form-group
+                input#exampleInputEmail1.form-control placeholder=("Название клиники") type="text" /
+              .form-group
+                select.form-control.input-lg
+                  option Возможн. записи
+                  option М
+                  option Ж
+              .form-group
+                select.form-control.input-lg
+                  option Категор. клиники
+                  option М
+                  option Ж
+              .form-group
+                select.form-control.input-lg
+                  option Детская/Врослая
+                  option Да
+                  option Нет
+              .form-group
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Только с отзывами
+              button.btn.btn-block.btn-primary.loading type="button"  Найти
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            a data-parent="#accordion" data-toggle="collapse" href="#collapseThree" 
+              | Диагностика
+              span.ico-collapse
+        #collapseThree.panel-collapse.collapse.lvl1
+          .panel-body
+            form role="form" 
+              .form-group
+                select#clinicSpecialitySelectLeft.form-control data-placeholder=("Район или метро") multiple="" name="metro[]" 
+                  optgroup label="Районы" 
+                    option value="" 
+                    option value="czao"  ЦАО
+                    option value="svao"  СВАО
+                    option value="vao"  ВАО
+                    option value="yuvao"  ЮВАО
+                    option value="zao"  ЗАО
+                    option value="szao"  СЗАО
+                  optgroup label="Метро" 
+                    option value="" 
+                    option value="alekseevskaya"  Алексеевская
+                    option value="babushkinskaya"  Бабушкинская
+                    option value="belorusskaya"  Белорусская
+                    option value="botanicheskij-sad"  Ботанический сад
+                    option value="bratislavskaya"  Братиславская
+                    option value="bulvar-dmitriya-donskogo"  Бульвар Дмитрия Донского
+                    option value="buninskaya-alleya"  Бунинская аллея
+                    option value="vdnx"  ВДНХ
+                    option value="vladyikino"  Владыкино
+                    option value="vodnyij-stadion"  Водный стадион
+                    option value="vojkovskaya"  Войковская
+                    option value="novocherkasskaya"  Новочеркасская
+                    option value="dinamo"  Динамо
+                    option value="kunczevskaya"  Кунцевская
+                    option value="lermontovskij-prospekt"  Лермонтовский проспект
+                    option value="lyublino"  Люблино
+                    option value="marina-roshha"  Марьина роща
+                    option value="mayakovskaya-msk"  Маяковская
+                    option value="medvedkovo"  Медведково
+                    option value="mendeleevskaya"  Менделеевская
+                    option value="mitino"  Митино
+                    option value="molodyozhnaya"  Молодёжная
+                    option value="novogireevo"  Новогиреево
+                    option value="novokuzneczkaya"  Новокузнецкая
+                    option value="oxotnyij-ryad"  Охотный ряд
+                    option value="paveleczkaya"  Павелецкая
+                    option value="park-pobedyi-msk"  Парк Победы
+                    option value="pervomajskaya"  Первомайская
+                    option value="petrovsko-razumovskaya"  Петровско-Разумовская
+                    option value="planernaya"  Планерная
+                    option value="pushkinskaya"  Пушкинская
+                    option value="rechnoj-vokzal"  Речной вокзал
+                    option value="rizhskaya"  Рижская
+                    option value="savyolovskaya"  Савёловская
+                    option value="sviblovo"  Свиблово
+                    option value="slavyanskij-bulvar"  Славянский бульвар
+                    option value="tverskaya"  Тверская
+                    option value="tekstilshhiki"  Текстильщики
+                    option value="tretyakovskaya"  Третьяковская
+                    option value="tushinskaya"  Тушинская
+                    option value="ulicza-gorchakova"  Улица Горчакова
+                    option value="ulicza-starokachalovskaya"  Улица Старокачаловская
+                    option value="shhyolkovskaya"  Щёлковская
+              .form-group
+                select.form-control
+                  option Вид диагностики
+                  option М
+                  option Ж
+              .form-group
+                select.form-control
+                  option Обл. диагностики
+                  option Да
+                  option Нет
+              button.btn.btn-block.btn-primary type="button"  Найти
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            a data-parent="#accordion" data-toggle="collapse" href="#collapseFour" 
+              | запись по омс
+              span.ico-collapse
+        #collapseFour.panel-collapse.collapse.lvl1
+          .panel-body
+            form role="form" 
+              .form-group
+                select#clinicSpecialitySelectLeft.form-control data-placeholder=("Район или метро") multiple="" name="metro[]" style=("display: none;") 
+                  optgroup label="Районы" 
+                    option value="" 
+                    option value="czao"  ЦАО
+                    option value="svao"  СВАО
+                    option value="vao"  ВАО
+                    option value="yuvao"  ЮВАО
+                    option value="zao"  ЗАО
+                    option value="szao"  СЗАО
+                  optgroup label="Метро" 
+                    option value="" 
+                    option value="alekseevskaya"  Алексеевская
+                    option value="babushkinskaya"  Бабушкинская
+                    option value="belorusskaya"  Белорусская
+                    option value="botanicheskij-sad"  Ботанический сад
+                    option value="bratislavskaya"  Братиславская
+                    option value="bulvar-dmitriya-donskogo"  Бульвар Дмитрия Донского
+                    option value="buninskaya-alleya"  Бунинская аллея
+                    option value="vdnx"  ВДНХ
+                    option value="vladyikino"  Владыкино
+                    option value="vodnyij-stadion"  Водный стадион
+                    option value="vojkovskaya"  Войковская
+                    option value="novocherkasskaya"  Новочеркасская
+                    option value="dinamo"  Динамо
+                    option value="kunczevskaya"  Кунцевская
+                    option value="lermontovskij-prospekt"  Лермонтовский проспект
+                    option value="lyublino"  Люблино
+                    option value="marina-roshha"  Марьина роща
+                    option value="mayakovskaya-msk"  Маяковская
+                    option value="medvedkovo"  Медведково
+                    option value="mendeleevskaya"  Менделеевская
+                    option value="mitino"  Митино
+                    option value="molodyozhnaya"  Молодёжная
+                    option value="novogireevo"  Новогиреево
+                    option value="novokuzneczkaya"  Новокузнецкая
+                    option value="oxotnyij-ryad"  Охотный ряд
+                    option value="paveleczkaya"  Павелецкая
+                    option value="park-pobedyi-msk"  Парк Победы
+                    option value="pervomajskaya"  Первомайская
+                    option value="petrovsko-razumovskaya"  Петровско-Разумовская
+                    option value="planernaya"  Планерная
+                    option value="pushkinskaya"  Пушкинская
+                    option value="rechnoj-vokzal"  Речной вокзал
+                    option value="rizhskaya"  Рижская
+                    option value="savyolovskaya"  Савёловская
+                    option value="sviblovo"  Свиблово
+                    option value="slavyanskij-bulvar"  Славянский бульвар
+                    option value="tverskaya"  Тверская
+                    option value="tekstilshhiki"  Текстильщики
+                    option value="tretyakovskaya"  Третьяковская
+                    option value="tushinskaya"  Тушинская
+                    option value="ulicza-gorchakova"  Улица Горчакова
+                    option value="ulicza-starokachalovskaya"  Улица Старокачаловская
+                    option value="shhyolkovskaya"  Щёлковская
+              button.btn.btn-block.btn-primary type="button"  Найти
+              #vector
+                #vector1.panel-collapse.collapse
+                  .form-group
+                    input#exampleInputEmail1.form-control placeholder=("Название клиники") type="text" /
+                  .form-group
+                    select.form-control
+                      option Возможн. записи
+                      option М
+                      option Ж
+                  .form-group
+                    select.form-control
+                      option Категор. клиники
+                      option М
+                      option Ж
+                  .form-group
+                    select.form-control.input-lg
+                      option Детская/Врослая
+                      option Да
+                      option Нет
+                  .form-group
+                    .checkbox
+                      label
+                        input type="checkbox" /
+                        | Только с отзывами
+              a.btn.btn-block.btn-success data-parent="#vector" data-toggle="collapse" href="#vector1" type="button"  Запись по направлению

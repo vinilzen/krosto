@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="favicon.gif" rel="icon" />
+    <title>Doctu.ru – Справочник пациента 123</title>
+    <meta content="width=device-width" name="viewport" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!--[if lte IE 9] link href="css/ie9.css" rel="stylesheet"--><!--[if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar" role="navigation">
+        <div class="navbar-header">
+          <span class="navbar-brand" title="Doctu.ru"><img alt="doctu.ru" src="img/logo_doctu.png" /></span>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a class="hand" href="/partners.html">Партнерство для клиник</a>
+            </li>
+            <li>
+              <a href="/about.html">О проекте</a>
+            </li>
+          </ul>
+          <div class="city-changer">
+            <a class="showCities" href="#"> Санкт-Петербург</a>
+            <ul>
+              <li class="selected">
+                <a href="http://doctu.ru">Санкт-Петербург</a>
+              </li>
+              <li>
+                <a href="http://msk.doctu.ru">Москва</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borderbot bordertop">
+      <div class="jumbotron about">
+        <div class="container text-center">
+          <h1>
+            Doctu.ru - уникальный сервис по поиску врача и записи на прием к нему!
+          </h1>
+          <p class="lead">
+            У нас Вы с легкостью найдете нужного специалиста или клинику, а также сможете записаться на прием за два клика мышкой.
+          </p>
+          <div class="row">
+            <div class="col-xs-3 col-xs-offset-2">
+              <div class="icogreenTransp icoGr1"></div>
+              <h3>
+                8000
+              </h3>
+              <p>
+                Врачей
+              </p>
+            </div>
+            <div class="col-xs-3">
+              <div class="icogreenTransp icoGr2"></div>
+              <h3>
+                450
+              </h3>
+              <p>
+                Клиник
+              </p>
+            </div>
+            <div class="col-xs-3">
+              <div class="icogreenTransp icoGr3"></div>
+              <h3>
+                7000
+              </h3>
+              <p>
+                Отзывов
+              </p>
+            </div>
+            <div class="col-xs-3">
+              <div class="icogreenTransp icoGr4"></div>
+              <h3>
+                50 000
+              </h3>
+              <p>
+                Записавшихся
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="btn btn-success">
+                Найти врача
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">
+              Почему мы
+            </h2>
+            <p class="text-center lead">
+              На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города.  Из них Вы можете выбрать врача, отвечающего именно Вашим требованиям.
+            </p>
+            <div class="row why_we">
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi1"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Единая база
+                    </h4>
+                    <p>
+                      Больше не надо просматривать десятки сайтов клиник - мы собрали врачей всех крупных клиник города на одном сайте! Вам остается только выбрать подходящего и записаться на прием.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi2"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Подбор специалиста
+                    </h4>
+                    <p>
+                      Вы можете поручить эту работу нашим специалистам! Они в считанные минуты подберут несколько вариантов, подходящих под Ваши требования, а также сразу уточнят у клиники ближайшее свободное время для записи.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi3"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Всё бесплатно
+                    </h4>
+                    <p>
+                      Для пользователей работа с сайтом абсолюtтно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi4"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Простота и удобство
+                    </h4>
+                    <p>
+                      Ullam, cupiditate qui sequi harum illo quas enim delectus nihil excepturi voluptates, ducimus! Accusantium ea beatae, doloremque delectus optio ad!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi5"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Скидки от партнеров
+                    </h4>
+                    <p>
+                      Reprehenderit debitis, culpa. Animi inventore deleniti quo id quia, nobis autem maxime, ducimus expedita ipsum eligendi nihil eius sequi nostrum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="media">
+                  <span class="media-left"><i class="bigGrIco bgi6"></i></span>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      Запись по ОМС
+                    </h4>
+                    <p>
+                      Similique ullam porro obcaecati, enim animi atque dolor recusandae consequuntur reprehenderit explicabo aut nemo facilis non sint voluptatibus incidunt officia?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container drk borderbot">
+        <div class="container comments_about_us">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">
+                Отзывы о нас
+              </h2>
+              <p class="text-center lead">
+                Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+              </p>
+            </div>
+          </div>
+          <div class="row"></div>
+          <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+            <div class="carousel-inner about_carousel">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="media about_reviews">
+                      <span class="pull-left"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></span>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <strong>Маслов</strong>Александр Сергеевич
+                        </h4>
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="media about_reviews">
+                      <span class="pull-left"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></span>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <strong>Маслов</strong>Александр Сергеевич
+                        </h4>
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="media about_reviews">
+                      <span class="pull-left"><img alt="..." class="media-object" height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /></span>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <strong>Маслов</strong>Александр Сергеевич
+                        </h4>
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      <span class="blockquote">«От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Controls--><a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button"><span class="arrow-left"></span></a><a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button"><span class="arrow-right"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="container borderbot media_about_us">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">
+              СМИ о нас
+            </h2>
+            <p class="text-center lead">
+              Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+            </p>
+          </div>
+        </div>
+        <div class="row media_about_list">
+          <div class="col-md-12 text-left">
+            <ul>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN1"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN2"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Это просто прорыв года</a>
+                  <p>
+                    http://doctu.ru/about
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN4"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Никаких очередей, запись по ОМС</a>
+                  <p>
+                    https://vk.com/im?pee=124627169
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN2"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Это просто прорыв года</a>
+                  <p>
+                    http://doctu.ru/about
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN4"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Никаких очередей, запись по ОМС</a>
+                  <p>
+                    https://vk.com/im?pee=124627169
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN1"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN2"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Это просто прорыв года</a>
+                  <p>
+                    http://doctu.ru/about
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN4"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Никаких очередей, запись по ОМС</a>
+                  <p>
+                    https://vk.com/im?pee=124627169
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN2"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Это просто прорыв года</a>
+                  <p>
+                    http://doctu.ru/about
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN4"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Никаких очередей, запись по ОМС</a>
+                  <p>
+                    https://vk.com/im?pee=124627169
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico icoN3"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Записатька ко врачу можно в 1 клик</a>
+                  <p>
+                    https://dribbble.com/shots/1251630
+                  </p>
+                </div>
+              </li>
+              <li class="media col-xs-4">
+                <span class="media-left"><i class="book_ico"></i></span>
+                <div class="media-body">
+                  <a class="media-link" href="#"> Обзор нового интернет сервиса Doctu.ru</a>
+                  <p>
+                    https://mail.google.com/mail/u/0/#inbox
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row more_public">
+          <div class="col-xs-12 text-center">
+            <div class="btn btn-default">
+              Загрузить еще публикации
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="copy">
+          <p>
+            &copy; 2012-2014 Doctu.ru &mdash; запись к врачу в <a href="http://msk.doctu.ru">Москве</a>, <a href="http://doctu.ru">Санкт-Петербурге</a>
+          </p>
+        </div>
+        <div class="text-right links">
+          <ul class="list-inline">
+            <li>
+              <a href="library">Справочник пациента</a>
+            </li>
+            <li>
+              <a href="terms">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

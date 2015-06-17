@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    #mymap
+    .container.above_map
+      .row
+        .col-xs-5.contacts
+          h1 Контакты
+          h2 Как до нас добраться
+          p
+            img alt="" src="img/metro_msk7.png"
+            | Чкаловская
+          p
+            img alt="" src="img/address.png"
+            | 197198, Санкт-Петербург,
+            br
+            | ул. Мончегорская, д.7,
+            br
+            | Лит. А, помещение 4-Н
+          h2.move_up Как  с нами связаться
+          p
+            img alt="" src="img/letter.png"
+            a href="mailto:info@doctu.ru" target="_blank"  info@doctu.ru
+          p
+            img alt="" src="img/phone.png"
+            | +7 (812) 424-48-24 (Санкт-Петербург)
+            br
+            | +7 (499) 649-12-49 (Москва)
+          a.reqv data-toggle="collapse" href="#rekv"  Показать реквизиты
+        #rekv.col-xs-5.contacts.rekv.collapse.fade
+          p
+            img alt="" src="img/rekv.png" >/
+            | ООО «ИнфоСервис Групп»
+          p 198215, Санкт-Петербург, ул. Счастливая д.17
+          p ОГРН 1127847488944
+          p ИНН 7805601374
+          p КПП 780501001
+          p ОКВЭД 72.20 (разработка програмного обеспечения и консультирование в этой области)
+    == Slim::Template.new("footer.slim").render
+    script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript" 
+    javascript:
+      ymaps.ready(init);
+      var myMap;
+      function init(){
+        myMap = new ymaps.Map ("mymap", {
+            center: [59.957, 30.296],
+            zoom: 16
+        });
+        myPlacemark = new ymaps.Placemark([59.95765, 30.2955], {
+          content: 'Doctu.ru!',
+          balloonContent: 'Санкт-Петербург,<br>ул. Мончегорская, д.7,<br>Лит. А, помещение 4-Н',
+        });
+        myPlacemark.options.set({
+          iconImageHref: 'img/icoMap.png',
+          iconImageSize: [56, 69]
+        });
+        myMap.geoObjects.add(myPlacemark);
+      }

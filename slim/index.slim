@@ -1,0 +1,613 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid
+      .jumbotron
+        .container.text-center
+          h1
+            | Запись на прием к врачу
+            small
+              img alt="" src="img/free.png" /
+          #mainSearch
+            ul.nav.nav-tabs role="tablist" 
+              li.active
+                a data-toggle="tab" href="#tab1"  Врачи
+              li
+                a data-toggle="tab" href="#tab2"  Клиники
+              li
+                a data-toggle="tab" href="#tab3"  Диагностика
+              li
+                a data-toggle="tab" href="#tab4"  Запись по ОМС
+            .tab-content
+              #tab1.tab-pane.active
+                form.form-inline role="form" 
+                  .row
+                    .form-group.col-xs-5
+                      select.form-control.input-lg data-placeholder=("Cпециализация врача") 
+                        option value="1" 
+                        option value="akusher"  Акушер
+                        option value="akusher-ginekolog"  Акушер-гинеколог
+                        option value="allergolog"  Аллерголог
+                        option value="angioxirurg"  Ангиохирург
+                        option value="androlog"  Андролог
+                        option value="anesteziolog"  Анестезиолог
+                        option value="apiterapevt"  Апитерапевт
+                        option value="aritmolog"  Аритмолог
+                        option value="artrolog"  Артролог
+                        option value="venerolog"  Венеролог
+                        option value="vrach-vosstanovitelnoj-mediczinyi"  Врач восстановительной медицины
+                        option value="vrach-klinicheskoj-lab-rii"  Врач клинической лаборатории
+                        option value="vrach-mrt"  Врач МРТ
+                        option value="vrach-obshhej-praktiki"  Врач общей практики
+                        option value="vrach-po-sportivn.-mediczine"  Врач по спортивной медицине
+                    .form-group.col-xs-5
+                      select.form-control.input-lg data-placeholder=("Район или метро") 
+                        option value="1" 
+                        option value="1"  1
+                        option value="1"  2
+                        option value="1"  3
+                    .form-group.col-xs-2
+                      button.btn.btn-primary.btn-fr type="submit"  Найти
+              #tab2.tab-pane
+                form.form-inline role="form" 
+                  .row
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Cпециализация клиники
+                        option value="2"  2
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Район или метро
+                    .form-group.col-xs-2
+                      button.btn.btn-primary.btn-fr type="submit"  Найти
+              #tab3.tab-pane
+                form.form-inline role="form" 
+                  .row
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Cпециализация Диагностика
+                        option value="2"  2
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Район или метро
+                    .form-group.col-xs-2
+                      button.btn.btn-primary.btn-fr type="submit"  Найти
+              #tab4.tab-pane
+                form.form-inline role="form" 
+                  .row
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Запись по ОМС
+                        option value="2"  2
+                    .form-group.col-xs-5
+                      select.form-control.input-lg
+                        option value="1"  Район или метро
+                    .form-group.col-xs-2
+                      button.btn.btn-primary.btn-fr type="submit"  Найти
+          p.counter
+            span.btn.btn-default.btn-lg.disabled role="button" 
+              | 4
+            span.btn.btn-default.btn-lg.disabled role="button" 
+              | 4
+            span.btn.btn-default.btn-lg.disabled role="button" 
+              | 6
+            span.btn.btn-default.btn-lg.disabled role="button" 
+              | 4
+            span.btn.btn-default.btn-lg.disabled role="button" 
+              | 1
+            span.btn.btn-default.btn-lg.disabled role="button"  6
+          p.counter_descr Пациентов уже записалось к врачу
+      .container
+        .row
+          .col-xs-12
+            h2.text-center Специалисты
+            p.text-center.lead На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города. Из них вы можете выбрать врача отвечающего имменно Вашим требованиям
+            ul.list-unstyled.specialists
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 1
+                    dd
+                      strong Акушер
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 123
+                    dd
+                      strong Акушер-гинеколог
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 1
+                    dd
+                      strong Lorem.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 2
+                    dd
+                      strong Nisi.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 43
+                    dd
+                      strong Abribviatura due.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 4
+                    dd
+                      strong Repellat.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 25
+                    dd
+                      strong Repudiandae!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 6
+                    dd
+                      strong Aliquam!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 7
+                    dd
+                      strong Consequatur?
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 8
+                    dd
+                      strong Minima.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 89
+                    dd
+                      strong Quasi.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 10
+                    dd
+                      strong Aut.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 1
+                    dd
+                      strong Neque.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 212
+                    dd
+                      strong Quo.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 13
+                    dd
+                      strong Quibusdam?
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 14
+                    dd
+                      strong Artbeque.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 16
+                    dd
+                      strong Lorem.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 115
+                    dd
+                      strong Ducimus.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 113
+                    dd
+                      strong Ad.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 112
+                    dd
+                      strong Architecto.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 111
+                    dd
+                      strong Iusto.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 11
+                    dd
+                      strong Deserunt.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 219
+                    dd
+                      strong Odio.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 18
+                    dd
+                      strong Atque.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 7
+                    dd
+                      strong Soluta?
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 16
+                    dd
+                      strong Facere!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 15
+                    dd
+                      strong Asperiores!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 14
+                    dd
+                      strong Quibusdam.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 13
+                    dd
+                      strong Saepe!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 12
+                    dd
+                      strong Velit!
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 11
+                    dd
+                      strong Incidunt.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 11
+                    dd
+                      strong Гастроэнтеролог
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 11
+                    dd
+                      strong Венеролог
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 14
+                    dd
+                      strong Quibusdam.
+              li
+                a href="#" 
+                  dl.dl-horizontal
+                    dt
+                      span.label.label-success 11
+                    dd
+                      strong Андролог
+      .container.map
+        .row
+          .col-xs-12.text-center
+            .btn.btn-default Искать на карте
+      .container.drk.borderbot
+        .container.container1200
+          .row
+            .col-xs-12
+              h2.text-center Как это работает
+              p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+          .row.mb30
+            .col-xs-4.text-center
+              p
+                a href="" 
+                  span.ico_big.ico1
+              h3
+                a href=""  Онлайн запись на прием
+              p Клиники в режиме онлайн обрабатывают Ваши заявки на запись к специалистам.
+            .col-xs-4.text-center
+              p
+                a href="" 
+                  span.ico_big.ico2
+              h3
+                a href=""  Обширная база врачей
+              p На сайте представлены анкеты более чем 1500 специалистов из 100 клиник города.
+            .col-xs-4.text-center
+              p
+                a href="" 
+                  span.ico_big.ico3
+              h3
+                a href=""  Отзывы и рейтинг врачей
+              p Мы собираем отзывы только реальных пациентов и на их основе присваиваем рейтинг врачам и клиникам.
+      .container.borderbot
+        .container1200.container
+          .row
+            .col-xs-12
+              h2.text-center Лучшие клиники
+              p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+          .row
+            .col-xs-3.text-center
+              p.img-center
+                a href="#" 
+                  img alt="" src="img/clin-ico1.jpg" /
+              .caption
+                h3
+                  a href="#"  ОС-ТАВИГО
+                .clinic-request style="display:none;" 
+                  .star-rating
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                  .rating 4.9
+                .clearfix.visible-xs-block.visible-sm-block
+            .col-xs-3.text-center
+              p.img-center
+                a href="#" 
+                  img alt="" src="img/clin-ico2.jpg" /
+              .caption
+                h3
+                  a href=""  МедПросвет
+                .clinic-request style="display:none;" 
+                  .star-rating
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                  .rating 4.9
+                .clearfix.visible-xs-block.visible-sm-block
+            .col-xs-3.text-center
+              p.img-center
+                a href="#" 
+                  img alt="" src="img/clin-ico3.jpg" /
+              .caption
+                h3
+                  a href=""  СМ-Клиника
+                .clinic-request style="display:none;" 
+                  .star-rating
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                  .rating 4.9
+                .clearfix.visible-xs-block.visible-sm-block
+            .col-xs-3.text-center
+              p.img-center
+                a href="#" 
+                  img alt="" src="img/clin-ico4.jpg" /
+              .caption
+                h3
+                  a href=""  Гранж
+                .clinic-request style="display:none;" 
+                  .star-rating
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                  .rating 4.9
+                .clearfix.visible-xs-block.visible-sm-block
+            .col-xs-12.text-center
+              p
+                a.btn.btn-gr.btn-lg href="#"  Все клиники
+      .container.drk.borderbot
+        .container.container1200
+          .row
+            .col-xs-12
+              h2.text-center Отзывы о врачах
+              p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+          .row
+            #carousel-example-generic.carousel.slide data-ride="carousel" 
+              /! Wrapper for slides
+              .carousel-inner
+                .item.active
+                  .row
+                    .col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+                      .media
+                        a.pull-left href="#" 
+                          img.media-object alt="..." height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /
+                        .media-body
+                          h4.media-heading
+                            a href="" 
+                              strong Маслов
+                              |  Александр Сергеевич
+                          p.spec
+                            span Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог
+                      p.text-center
+                        span.blockquote
+                          | «От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»
+                        span.author
+                          strong — Николай Рец,
+                          | 22.03.2014
+                .item
+                  .row
+                    .col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+                      .media
+                        a.pull-left href="#" 
+                          img.media-object alt="..." height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /
+                        .media-body
+                          h4.media-heading
+                            a href="" 
+                              strong Маслов
+                              | Александр Сергеевич
+                          p.spec
+                            span Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог
+                      p.text-center
+                        span.blockquote
+                          | «От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»
+                        span.author
+                          strong — Николай Рец,
+                          | 22.03.2014
+                .item
+                  .row
+                    .col-md-6.col-md-offset-3.col-xs-8.col-xs-offset-2
+                      .media
+                        a.pull-left href="#" 
+                          img.media-object alt="..." height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-609ec0d873a35d6d05a59faeb896b4bf.jpg" width="74" /
+                        .media-body
+                          h4.media-heading
+                            a href="" 
+                              strong Маслов
+                              | Александр Сергеевич
+                          p.spec
+                            span Косметолог, Хирург, Трихолог, Дерматовенеролог, Дерматолог
+                      p.text-center
+                        span.blockquote
+                          | «От нашей семьи большое спасибо Вашей компании за оперативность и четкость! Впредь будем обязательно к Вам обращаться.»
+                        span.author
+                          strong — Николай Рец,
+                          | 22.03.2014
+              /! Controls
+              a.left.carousel-control data-slide="prev" href="#carousel-example-generic" role="button" 
+                span.arrow-left
+              a.right.carousel-control data-slide="next" href="#carousel-example-generic" role="button" 
+                span.arrow-right
+            .col-xs-12.text-center
+              p
+                a.btn.btn-gr.btn-lg href="#"  Все врачи
+      .container.borderbot
+        .container1200.container
+          .row
+            .col-xs-12
+              h2.text-center СМИ о нас
+              p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+          .row
+            .col-xs-4.text-left
+              .panel.panel-default
+                .panel-body
+                  p.itl XIV столетие. В Европе свирепствует чума. Виновницей смертоносной беды признают беззащитную девушку, подозревая ее в колдовстве. Умирающий кардинал просит рыцаря Бэймена доставить ведьму в далекое аббатство, где ее чары должны быть разрушены. Шестеро верховых и повозка с
+                  .arrow
+              p.text-center.smi_logo
+                a href="http://metronews.ru" target="_blank" 
+                  img alt="" src="img/metro_logo.png" /
+                  span www.metronews.ru
+            .col-xs-4.text-left
+              .panel.panel-default
+                .panel-body
+                  p.itl Даг — простой вышибала, работающий в провинциальном баре. Однажды, ввязавшись в драку на хоккейном матче с одним из игроков, он попадает в поле зрения тренера команды мастеров. Ему срочно нужен игрок, который сможет защитить на льду ведущего нападающего клуба.
+                  .arrow
+              p.text-center.smi_logo
+                a href="http://spbdnevnik.ru" target="_blank" 
+                  img alt="" src="img/logo.gif" /
+                  span www.spbdnevnik.ru
+            .col-xs-4.text-left
+              .panel.panel-default
+                .panel-body
+                  p.itl Два лучших выпускника полицейской академии оказались по разные стороны баррикады: один из них — агент мафии в рядах правоохранительных органов, другой — «крот», внедрённый в мафию. Каждый считает своим долгом обнаружить и уничтожить противника, постоянная жизнь другой волны.»
+                  .arrow
+              p.text-center.smi_logo
+                a href="http://metronews.ru" target="_blank" 
+                  img alt="" src="img/metro_logo.png" /
+                  span www.metronews.ru
+      .container.drk.borderbot
+        .container1200.container
+          .row
+            .col-xs-12
+              h2.text-center Полезная информация
+              p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+          .row.fixh
+            .col-xs-4.text-left
+              p.mdl
+                | Для современного человека
+                strong запись к врачу через интернет
+                | является необходимой в быту услугой. Ведь такой сервис решает вопросы экономии времени и сохранения душевного комфорта. Однако среди услуг, которые предлагает обычная
+                strong поликлиника, запись к врачу онлайн
+                | значится крайне редко. Сайт
+                a href="http://www.doctu.ru"  www.doctu.ru
+                | готов взять на себя подобные заботы. Дополнительно сайт предоставляет бесплатный доступ к самой обширной базе врачей, содержащей полную информацию о каждом докторе города.
+            .col-xs-4.text-left
+              p.mdl
+                | Одна из проблем, с которой сталкивается каждый, кто пробовал
+                strong самозапись к врачу
+                | это ненадежность сервиса. Неизвестно, куда попадает заявка, произошла ли запись. На
+                a href="http://www.doctu.ru"  www.doctu.ru
+                | же все прозрачно. Сразу после
+                strong онлайн записи
+                | пациенту звонит администратор клиники и подтверждает время. Нет причин переживать о приеме: он обязательно состоится. После приема пользователь может оставить свой отзыв о враче: именно таким образом формируется рейтинг докторов на сайте. Отзывы других пациентов доступны для чтения.
+            .col-xs-4.text-left
+              p.mdl
+                | Некоторые пациенты
+                strong записываются к врачам
+                | только бесплатных поликлиник, тогда как иные предпочитают частные клиники. Другие сервисы не могут обеспечить пользователям
+                strong онлайн запись
+                | в те и другие учреждения. Однако с помощью данного сайта Вы можете
+                strong записаться к врачу
+                | как на платный, так и на бесплатный прием. Так
+                strong запись через интернет
+                | окончательно стирает границы технических возможностей и превращается в удобный повседневный инструмент.
+          .row
+            .col-xs-12.text-center
+              p
+                span.all_inf href="#"  Показать полностью
+      .container.green
+        .row
+          .col-xs-12.text-center
+            .btn.btn-default Записаться к врачу
+    == Slim::Template.new("footer.slim").render

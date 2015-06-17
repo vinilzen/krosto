@@ -1,0 +1,15 @@
+.footer
+  .row
+    .copy
+      p
+        | &copy; 2012-2014 Doctu.ru &mdash; запись к врачу в 
+        a href="http://msk.doctu.ru" Москве
+        | , 
+        a href="http://doctu.ru" Санкт-Петербурге
+    .text-right.links
+      ul.list-inline
+        li: a[href="library"] Справочник пациента
+        li: a[href="terms"] Пользовательское соглашение
+        li: a[href="contacts"] Контакты
+        
+== Slim::Template.new("script.slim").render
