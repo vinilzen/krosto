@@ -4,11 +4,13 @@ Demo:
 
 http://test.to4ek.net/krosto/index.html
 
-http://test.to4ek.net/krosto/inner.html
-
 http://test.to4ek.net/krosto/about.html
+
+http://test.to4ek.net/krosto/terms.html
 
 http://test.to4ek.net/krosto/contacts.html
 
 http://test.to4ek.net/krosto/partners.html
+
+http://test.to4ek.net/krosto/forgpass.html
 

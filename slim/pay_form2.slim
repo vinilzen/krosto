@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.inner-krosto
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            h1.text-left.h1-main Удаление бородавки разными способами
+
+            .row.row-cards
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  a href="#"
+                    img.img-responsive src="img/cards.jpg" alt=""/
+                  span.cards-info
+                    img src="img/users-sm.png" alt=""/
+                    | Купили 14 человек
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  .caption.caption-cards
+                    .row-caption-cards.row
+                      .col-xs-3.col-cards.text-center
+                        p.p-slim.text-gray.text-uppercase до 15 мая
+                        p.text-green.text-big -55%
+                      .col-xs-3.col-cards.text-center
+                        s.text-gray 10 000 Р
+                        p
+                          strong.text-darkblue.text-big
+                            | 1 755 
+                            span.rub &#8377;
+                      .col-xs-5.col-cards.text-center
+                        .btn.btn-success.btn-twoline-green.btn-block
+                          strong Забронировать
+                          span Аванс 1560 руб.
+                      .col-xs-1.col-cards.text-center
+                        span.badge.badge-cards ?
+                    .clearfix
+                  .caption-footer
+                    .media.media-cards-clinic.pull-left
+                      .media-left
+                        a href="#"
+                          img.cards-clinic-logo src="img/clin.jpg" alt=""/
+                      .media-body
+                        a.h4-link.text-darkblue href="#" СМ-Клиника
+                        p.text-cards-clinic-addr пр. Энгельса, д. 154
+                    .btn.btn-success.pull-right Подробнее
+                    .clearfix
+
+    == Slim::Template.new("footer.slim").render

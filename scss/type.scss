@@ -1,0 +1,84 @@
+.text-darkblue {
+	color:$text-darkblue;
+}
+.text-green {
+	color:$text-green;
+}
+.text-big {
+	font-size: 24px;
+}
+.text-gray {
+	color:$text-gray;
+}
+.h3-cards, .caption .h3-cards {
+	font-size: 18px;
+	color:$text-darkblue;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+h2, .h2 {
+	font-size: 18px;
+  	color: #555;
+  	font-weight: normal;
+  	margin-top: 35px;
+  	padding-bottom: 15px;
+  	border-bottom:1px solid $border-color-gray;
+}
+.h1-main {
+	margin-top: 0;
+	font-size: 20px;
+  	color: #555;
+}
+.p-slim {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.p-cards {
+	font-size: 13px;
+	font-weight: 300;
+	color:$text-light-gray;
+	margin-bottom: 25px;
+}
+.text-cards-clinic-addr {
+	color:#999;
+	font-size: 12px;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+.h4-link {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 3px;
+}
+.btn-green-blank {
+	color: #0ea646;
+	border-color: #0ea646;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 14px;
+	padding:0 24px;
+	line-height: 37px;
+	height:38px;
+	border-radius: 3px;
+	margin-top: 3px;
+	&:hover {
+		background-color: #0ea646;
+		color: #fff;
+	}
+}
+.badge {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #bbbbbb;
+	border-radius: 16px;
+}

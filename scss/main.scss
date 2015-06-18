@@ -1,0 +1,38 @@
+.doctor-result {
+	margin: 14px 0 14px 0;
+	padding: 14px 0;
+	border-bottom: 1px solid $border-color-gray;
+	border-top: 1px solid $border-color-gray;
+	.result {
+		font-size: 22px;
+		margin-top: -2px;
+		color: #302a7a;
+		padding-left: 0;
+		.green {
+			color: $text-green ;
+			font-weight: 700;
+		}
+	}
+	.sort-num {
+		padding-right: 0;
+		float:right;
+		text-align: right;
+	}
+	.sort-type, .sort-num {
+		label {
+			vertical-align: middle;
+			font-size: 13px;
+			font-weight: normal;
+			margin-bottom: 2px;
+      		margin-right: 2px;
+		}
+		.form-control {
+			margin-left: 5px;
+			display: inline-block;
+			font-size: 13px;
+			width: auto;
+			height: 30px;
+			padding: 4px;
+		}
+	}
+}

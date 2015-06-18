@@ -6,14 +6,11 @@ html
     == Slim::Template.new("navbar.slim").render
     .container-fluid.borderbot.bordertop
       .container.main_inner
-        .row.inner
+        .row.inner-krosto
           .col-xs-3.left-sidebar
             == Slim::Template.new("baner.slim").render
           .col-xs-9.text.main-side
-            ol.breadcrumb
-              li: a[href="#"] Главная
-              li.active Пользовательское соглашение
-            h1.text-left Пользовательское соглашение
+            h1.text-left.h1-main Пользовательское соглашение
             p Использование Информационного сервиса Doctu.ru Пользователем означает, что Пользователь принимает и обязуется соблюдать все нижеприведенные условия настоящего Соглашения.
             p Администрация Doctu.ru оставляет за собой право вносить в Соглашение изменения, которые вступают в силу с момента публикации. Дальнейшее использование вами Doctu.ru после внесения подобных изменений означает ваше согласие с ними.
 

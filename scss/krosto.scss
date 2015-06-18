@@ -1,3 +1,23 @@
+$text-darkblue: #211b70;
+$text-green: #0da646;
+$text-gray: #888;
+$text-light-gray: #555;
+$border-color-gray: #eaeef3;
+
+
+@import "main";
+@import "cards";
+@import "type";
+
+.inner-krosto {
+  width: 1180px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main-side {
+	padding-left: 0;
+	padding-right: 0;
+}
 .header .krosto-city-changer {
 	position: relative;
 	.city-changer {
@@ -20,4 +40,16 @@
 }
 .text-forgot {
 	margin-top: 20px;
+}
+.navbar-nav.nav.navbar-login {
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-right: 20px;
+}
+.jumbotron .tab-content.tab-content-krosto {
+	border-radius: 4px;
+}
+.row-last {
+	margin-bottom: 20px;
 }
