@@ -4,11 +4,16 @@
       span.navbar-brand title="Doctu.ru" 
         img alt="doctu.ru" src="img/logo_doctu.png"
     div
-      ul.nav.navbar-nav
+      ul.nav.navbar-nav.navbar-left
         li.active: a.hand[href="/partners.html"] Партнерство для клиник
         li: a[href="/about.html"] О проекте
-        li.city-changer
-          a.showCities href="#"  Санкт-Петербург
-          ul
-            li.selected: a[href="http://doctu.ru"] Санкт-Петербург
-            li: a[href="http://msk.doctu.ru"] Москва
+        li.krosto-city-changer
+          .city-changer
+            a.showCities href="#"  Санкт-Петербург
+            ul
+              li.selected: a[href="http://doctu.ru"] Санкт-Петербург
+              li: a[href="http://msk.doctu.ru"] Москва
+
+      ul.nav.navbar-nav.navbar-right
+        li
+          a Вход / Регистрация

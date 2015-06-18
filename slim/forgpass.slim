@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.inner
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("baner.slim").render
+          .col-xs-9.text.main-side
+            ol.breadcrumb
+              li: a[href="#"] Главная
+              li.active Пользовательское соглашение
+
+            h1.text-left Восстановление пароля
+
+            form.form-inline
+              .form-group
+                input.form-control.form-control-forgot type="text" placeholder="Ваша электронная почта"
+              .btn.btn-success.btn-instr Выслать инструкции
+            
+            .clearfix
+
+            p.text-forgot На ваш E-mail придет письмо с инструкциями по сбросу пароля. Если кто-то другой запросил сброс пароля, или вы сами вспомнили свой пароль, письмо можно проигнорировать.
+
+
+
+    == Slim::Template.new("footer.slim").render

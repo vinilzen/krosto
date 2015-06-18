@@ -52,52 +52,37 @@
         </div>
       </div>
     </div>
-    <div id="mymap"></div>
-    <div class="container above_map">
-      <div class="row">
-        <div class="col-xs-5 contacts">
-          <h1>
-            Контакты
-          </h1>
-          <h2>
-            Как до нас добраться
-          </h2>
-          <p>
-            <img alt="" src="img/metro_msk7.png" />Чкаловская
-          </p>
-          <p>
-            <img alt="" src="img/address.png" />197198, Санкт-Петербург,<br />ул. Мончегорская, д.7,<br />Лит. А, помещение 4-Н
-          </p>
-          <h2 class="move_up">
-            Как  с нами связаться
-          </h2>
-          <p>
-            <img alt="" src="img/letter.png" /><a href="mailto:info@doctu.ru" target="_blank"> info@doctu.ru</a>
-          </p>
-          <p>
-            <img alt="" src="img/phone.png" />+7 (812) 424-48-24 (Санкт-Петербург)<br />+7 (499) 649-12-49 (Москва)
-          </p>
-          <a class="reqv" data-toggle="collapse" href="#rekv"> Показать реквизиты</a>
-        </div>
-        <div class="col-xs-5 contacts rekv collapse fade" id="rekv">
-          <p>
-            <img alt="" src="img/rekv.png">>/</img>ООО «ИнфоСервис Групп»
-          </p>
-          <p>
-            198215, Санкт-Петербург, ул. Счастливая д.17
-          </p>
-          <p>
-            ОГРН 1127847488944
-          </p>
-          <p>
-            ИНН 7805601374
-          </p>
-          <p>
-            КПП 780501001
-          </p>
-          <p>
-            ОКВЭД 72.20 (разработка програмного обеспечения и консультирование в этой области)
-          </p>
+    <div class="container-fluid borderbot bordertop">
+      <div class="container main_inner">
+        <div class="row inner">
+          <div class="col-xs-3 left-sidebar">
+            <a href=""><img alt="" src="img/baner.jpg" /></a>
+          </div>
+          <div class="col-xs-9 text main-side">
+            <ol class="breadcrumb">
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li class="active">
+                Пользовательское соглашение
+              </li>
+            </ol>
+            <h1 class="text-left">
+              Восстановление пароля
+            </h1>
+            <form class="form-inline">
+              <div class="form-group">
+                <input class="form-control form-control-forgot" placeholder="Ваша электронная почта" type="text" />
+              </div>
+              <div class="btn btn-success btn-instr">
+                Выслать инструкции
+              </div>
+            </form>
+            <div class="clearfix"></div>
+            <p class="text-forgot">
+              На ваш E-mail придет письмо с инструкциями по сбросу пароля. Если кто-то другой запросил сброс пароля, или вы сами вспомнили свой пароль, письмо можно проигнорировать.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,25 +114,5 @@
     <script src="js/chosen.jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      var myMap;
-      function init(){
-        myMap = new ymaps.Map ("mymap", {
-            center: [59.957, 30.296],
-            zoom: 16
-        });
-        myPlacemark = new ymaps.Placemark([59.95765, 30.2955], {
-          content: 'Doctu.ru!',
-          balloonContent: 'Санкт-Петербург,<br>ул. Мончегорская, д.7,<br>Лит. А, помещение 4-Н',
-        });
-        myPlacemark.options.set({
-          iconImageHref: 'img/icoMap.png',
-          iconImageSize: [56, 69]
-        });
-        myMap.geoObjects.add(myPlacemark);
-      }
-    </script>
   </body>
 </html>
