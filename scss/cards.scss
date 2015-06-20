@@ -26,18 +26,26 @@
 	padding-right: 17px;
 }
 .row-caption-cards {
-	margin-top: 28px;
-	margin-bottom: -7px;
+	margin-top: 20px;
+	margin-bottom: -3px;
+	&:last-child {
+		margin-bottom: 5px;
+	}
+}
+.hr-caption-cards {
+	margin-top: 7px;
+	margin-bottom: 20px;
 }
 .btn-twoline {
 	font-size: 12px;
 	white-space: normal;
-	padding-left: 10px;
-	padding-right: 10px;
 	cursor: inherit;
 	color: #0da646;
 	background-color: #fff;
 	border-color: #0da646;
+	padding: 3px 20px 4px;
+	margin-left: -20px;
+	margin-top: 4px;
 	&:hover, &:focus {
 		color: #0da646;
 		background-color: #fff;
@@ -68,10 +76,13 @@
 	padding-right: 10px;
 }
 .caption-footer {
-
 	border-top: 1px solid $border-color-gray;
 	background-color: #f8f9f9;
 	padding: 20px 17px 16px;
+}
+.caption-footer-slim {
+	padding-top: 14px;
+	padding-bottom: 10px;
 }
 .cards-clinic-logo {
 	width: 45px;
@@ -80,10 +91,14 @@
 .media-cards-clinic {
 	margin-bottom: 0;
 }
+.media-cards-clinic-right {
+	margin-bottom: 20px;
+	&:first-child {
+		margin-top: 40px;
+	}
+}
 .row-cards {
-	margin-top: 15px;
-	margin-left: -15px;
-	margin-right: -15px;
+	margin: 15px -15px;
 	.col-sm-6, .col-xs-6 {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -94,14 +109,179 @@
 	position: relative;
 	left:-8px;
 }
+.badge {
+	cursor: pointer;
+}
 .text-consalt {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 28px;
+	margin-bottom: 28px;
 	min-height: 30px;
+	text-transform: uppercase;
 	img {
 		margin-right: 20px;
 	}
 	.badge {
 		margin-left: 20px;
 	}
+}
+.btn-md {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 9px 24px;
+}
+.btn-cards-down {
+	margin-top: 3px;
+}
+
+.breadcrumb-arrow {
+	list-style: none;
+	padding-left: 0;
+	border:1px solid #eaeef3;
+	background-color: #f8f9f9;
+	border-radius: 4px;
+	height: 100px;
+	margin-bottom: 45px;
+	li { 
+		float: left;
+		width: 33.33%;
+		height: 100px;
+		position: relative;
+		z-index: 2;
+		top:-1px;
+		background: url(../img/arr.png) no-repeat right top;
+		&:last-child {
+			background: none;
+		}
+		p {
+			padding-left: 25px;
+			padding-top: 20px;
+			padding-right: 25px;
+			color: $text-light-gray;
+			font-size: 13px;
+			font-weight: 300;
+			min-height: 65px;
+			strong {
+				color:$text-darkblue;
+				font-size: 48px;
+				font-weight: 300;
+				float:left;
+				line-height: 1;
+				margin-right: 25px;
+				margin-top: -2px;
+			}
+		}
+	}
+}
+.nav-cards.nav-tabs {
+	border-bottom: 1px solid $border-color-gray;
+	border-bottom-color: transparent;
+	&>li>a {
+		font-size: 14px;
+		font-weight: bold;
+		color: $text-darkblue;
+		margin-bottom: -1px;
+		&:hover, &:focus {
+			color: #010101;
+			background-color: #fff;
+			border: 1px solid $border-color-gray;
+		}
+	}
+	&>li.active>a,
+	&>li.active>a:focus,
+	&>li.active>a:hover {
+		color: #010101;
+		background-color: #fff;
+		border: 1px solid $border-color-gray;
+		border-bottom-color: transparent;
+	}
+}
+.tab-cards {
+	border: 1px solid $border-color-gray;
+	//border-top-color: transparent;
+	padding: 30px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	margin-bottom: 30px;
+}
+.tab-title {
+	font-size: 14px;
+	font-weight: bold;
+	color:$text-darkblue;
+	margin-top: 10px;
+	margin-bottom: 14px;
+}
+.tab-text {
+	color: $text-light-gray;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+.plain-text {
+	.glyphicon {
+		margin-right: 5px;
+		font-size: 14px;
+	}
+}
+.tab-list li {
+	color: $text-light-gray;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 18px;
+}
+.tab-list {
+	padding-left: 0;
+	li {
+		list-style: none;
+		padding-left: 23px;
+		position: relative;
+		margin-top: 5px;
+		&:before {
+			content: "\e013";
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1;
+			font-size: 10px;
+			color:#0da646;
+			position: absolute;
+			left:0;
+			top:4px;
+
+		}
+	}
+}
+
+.glyphicon-green {
+	color:#0da646;
+}
+.glyphicon-grape {
+	color:#9834b4;
+}
+.padding-text {
+	padding-left: 19px;
+	position: relative;
+	.glyphicon {
+		position: absolute;
+		left:0;
+	}
+	&.metro {
+		padding-left: 0;
+	}
+}
+.pay {
+	padding: 30px 55px;
+	a {
+		text-decoration: underline;
+		display: inline-block;
+		margin-bottom: 10px;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+.notactive {
+	opacity:.4;
 }

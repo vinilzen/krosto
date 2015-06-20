@@ -10,6 +10,9 @@
 .text-gray {
 	color:$text-gray;
 }
+.text-thin {
+
+}
 .h3-cards, .caption .h3-cards {
 	font-size: 18px;
 	color:$text-darkblue;
@@ -17,6 +20,12 @@
 	margin-top: 25px;
 	margin-bottom: 10px;
 	display: block;
+}
+.caption .h3-cards-order {
+	margin-top: 15px;
+}
+.img-cards-big {
+	min-height: 266px;
 }
 h2, .h2 {
 	font-size: 18px;
@@ -26,10 +35,32 @@ h2, .h2 {
   	padding-bottom: 15px;
   	border-bottom:1px solid $border-color-gray;
 }
+.h2-krosto {
+	color: #211b70;
+	font-weight: bold;
+	margin-top: 20px;
+}
 .h1-main {
 	margin-top: 0;
 	font-size: 20px;
   	color: #555;
+}
+.h1-main-personal {
+	margin-top: 20px;
+	small {
+		font-weight: 300;
+		font-size: 13px;
+		color: $text-light-gray;
+  		padding-top: 10px;
+	}
+	&.disable {
+		opacity: .4;
+	}
+}
+.h1-main-darkblue {
+	color: $text-darkblue;
+	font-size: 18px;
+	font-weight: 700;
 }
 .p-slim {
 	padding-bottom: 0;
@@ -52,6 +83,9 @@ h2, .h2 {
 	font-weight: bold;
 	margin-top: 3px;
 }
+.h4-link-normal {
+	font-weight: normal;
+}
 .btn-green-blank {
 	color: #0ea646;
 	border-color: #0ea646;
@@ -63,6 +97,15 @@ h2, .h2 {
 	height:38px;
 	border-radius: 3px;
 	margin-top: 3px;
+	&:hover {
+		background-color: #0ea646;
+		color: #fff;
+	}
+}
+.btn-success-blank {
+	color: #0ea646;
+	border-color: #0ea646;
+	background-color: transparent;
 	&:hover {
 		background-color: #0ea646;
 		color: #fff;
@@ -81,4 +124,43 @@ h2, .h2 {
 	vertical-align: middle;
 	background-color: #bbbbbb;
 	border-radius: 16px;
+}
+.plain-text {
+	color: $text-light-gray;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 18px;
+}
+.btn-soc {
+	margin-left: 15px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	width: 130px;
+	padding-left: 15px;
+	text-align: left;
+	&:hover, &:focus {
+		color:#fff;
+	}
+	img {
+		margin-right: 15px;
+	}
+}
+.btn-fb {
+	color:#fff;
+	background-color: #4c68b3;
+	img {
+		margin-top: -2px;
+	}
+}
+.btn-vk {
+	color:#fff;
+	background-color: #426b9a;
+	img {
+		margin-top: -2px;
+	}
+}
+.btn-ma {
+	color:#fff;
+	background-color: #3688c9;
 }

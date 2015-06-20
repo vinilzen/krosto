@@ -1,0 +1,46 @@
+.thumbnail.thumbnail-cards
+  .caption
+    .row
+      .col-xs-6.col-p-0.col-border
+        h1.h1-main.h1-form.text-center Вход
+        form.form-krosto
+          .form-group
+            input.form-control placeholder="Электронная почта" type="email"
+          .form-group
+            input.form-control placeholder="Пароль" type="password"
+          p.pull-right
+            a href="forgpass.html" Напомнить пароль
+          .checkbox.pull-left
+            label
+              input type="checkbox"
+              | Запомнить меня
+          button.btn.btn-success-blank.btn-block.text-uppercase type="submit" Войти
+
+      .col-xs-6.col-p-0
+        h1.h1-main.h1-form.text-center Регистрация
+        form.form-krosto
+          .form-group
+            input.form-control placeholder="Электронная почта" type="email"
+          .form-group
+            select.form-control
+              option Санкт-Петербург
+              option Москва
+          .checkbox
+            label
+              input type="checkbox"
+              | С правилами 
+              a href="terms.html" оферты
+              |  согласен
+          button.btn.btn-success.btn-block.text-uppercase type="submit" Зарегистрироваться
+  .caption-footer
+    p.text-center.p-slim
+      | Войти через:
+      a.btn.btn-soc.btn-fb href="#"
+        img src="img/fb-ico.png"
+        | facebook
+      a.btn.btn-soc.btn-vk href="#"
+        img src="img/vk-ico.png"
+        | Вконтакте
+      a.btn.btn-soc.btn-ma href="#"
+        img src="img/ma-ico.png"
+        | mail.ru

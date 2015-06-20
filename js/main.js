@@ -99,4 +99,6 @@ $(function(){
 		$('#clTab a[href="#reviewsTab"]').tab('show');
 	}
 
+
+	$('[data-toggle="tooltip"]').tooltip();
 });

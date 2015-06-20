@@ -5,9 +5,11 @@ $text-light-gray: #555;
 $border-color-gray: #eaeef3;
 
 
+@import "glyphicons";
 @import "main";
 @import "cards";
 @import "type";
+@import "auth";
 
 .inner-krosto {
   width: 1180px;
@@ -30,9 +32,9 @@ $border-color-gray: #eaeef3;
 	width: 450px;
 	margin-right: 20px;
 }
-.btn {
+/* .btn {
 	padding-bottom: 7px; 
-}
+} */
 .btn-instr {
 	padding-left: 35px;
 	padding-right: 35px;
