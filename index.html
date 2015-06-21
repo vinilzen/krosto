@@ -46,7 +46,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right navbar-login">
             <li>
-              <a>Вход / Регистрация</a>
+              <a class="myModalAuth" href="#">Вход / Регистрация</a>
             </li>
           </ul>
         </div>
@@ -866,6 +866,70 @@
               <a href="contacts.html">Контакты</a>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <!--Modal-->
+    <div aria-labelledby="myModalAuth" class="my_auth_modal modal" id="myModalAuth" role="dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="thumbnail thumbnail-cards">
+              <div class="caption">
+                <div class="row">
+                  <div class="col-xs-6 col-p-0 col-border">
+                    <h1 class="h1-main h1-form text-center">
+                      Вход
+                    </h1>
+                    <form class="form-krosto">
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Электронная почта" type="email" />
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Пароль" type="password" />
+                      </div>
+                      <p class="pull-right">
+                        <a href="forgpass.html">Напомнить пароль</a>
+                      </p>
+                      <div class="checkbox pull-left">
+                        <label><input type="checkbox" />Запомнить меня</label>
+                      </div>
+                      <button class="btn btn-success-blank btn-block text-uppercase" type="submit">Войти</button>
+                    </form>
+                  </div>
+                  <div class="col-xs-6 col-p-0">
+                    <h1 class="h1-main h1-form text-center">
+                      Регистрация
+                    </h1>
+                    <form class="form-krosto">
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Электронная почта" type="email" />
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>
+                            Санкт-Петербург
+                          </option>
+                          <option>
+                            Москва
+                          </option>
+                        </select>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" />С правилами <a href="terms.html">оферты</a> согласен</label>
+                      </div>
+                      <button class="btn btn-success btn-block text-uppercase" type="submit">Зарегистрироваться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="caption-footer">
+                <p class="text-center p-slim">
+                  Войти через:<a class="btn btn-soc btn-fb" href="#"><img src="img/fb-ico.png" />facebook</a><a class="btn btn-soc btn-vk" href="#"><img src="img/vk-ico.png" />Вконтакте</a><a class="btn btn-soc btn-ma" href="#"><img src="img/ma-ico.png" />mail.ru</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

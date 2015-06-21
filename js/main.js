@@ -101,4 +101,17 @@ $(function(){
 
 
 	$('[data-toggle="tooltip"]').tooltip();
+
+	
+	$('.myModalAuth').click(function(){
+		if ($('.auth_backdrop').length > 0){
+			$('#myModalAuth').hide().appendTo('body');
+			$('.auth_backdrop').remove();
+		} else {
+			var auth_backdrop = $('<div class="auth_backdrop"></div>')
+				.appendTo('.container-authmodal');
+			$('#myModalAuth').appendTo(auth_backdrop).fadeIn();
+		}
+	});
+
 });

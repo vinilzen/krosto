@@ -4,7 +4,7 @@ html
     == Slim::Template.new("head.slim").render
   body
     == Slim::Template.new("navbar.slim").render
-    .container-fluid.borderbot.bordertop
+    .container-fluid.borderbot.bordertop.container-authmodal
       .container.main_inner
         .row.inner-krosto
           .col-xs-3.left-sidebar
@@ -63,10 +63,35 @@ html
               .col-xs-12
                 .thumbnail.thumbnail-cards
                   .caption.pay.notactive
-                    p
-                      a href="#" ROBOKASSA
-                      br
-                      a href="#"
-                        img src="img/robo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" QIWI Кошелек
+                        br
+                        a.pay_logo href="#"
+                          img src="img/qiwi_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Яндекс. Деньги
+                        br
+                        a.pay_logo href="#"
+                          img src="img/yadengi_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Банковская карта
+                        br
+                        a.pay_logo href="#"
+                          img src="img/card_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Банковский перевод
+                        br
+                        a.pay_logo href="#"
+                          img src="img/vtb_logo.png" alt=""/
+                      / p
+                      /   a href="#" ROBOKASSA
+                      /   br
+                      /   a href="#"
+                      /     img src="img/robo.png" alt=""/
+                    .clearfix
 
     == Slim::Template.new("footer.slim").render

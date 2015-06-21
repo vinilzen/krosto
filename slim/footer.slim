@@ -11,5 +11,13 @@
         li: a[href="#"] Справочник пациента
         li: a[href="terms.html"] Пользовательское соглашение
         li: a[href="contacts.html"] Контакты
-        
+
+
+/! Modal
+#myModalAuth.my_auth_modal.modal aria-labelledby="myModalAuth" role="dialog" tabindex="-1" 
+  .modal-dialog role="document" 
+    .modal-content
+      .modal-body
+        == Slim::Template.new("auth.slim").render
+
 == Slim::Template.new("script.slim").render
