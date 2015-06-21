@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop.container-authmodal
+      .container.main_inner
+        .row.inner-krosto
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            h1.h1-main Ваш заказ
+
+            .row.row-cards
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  a href="#"
+                    img.img-responsive.img-cards-big src="img/cards_big.jpg" alt=""/
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  .caption.caption-cards
+                    a.h3.h3-cards.h3-cards-order href="#" Удаление разными способами
+                    p.p-cards На приеме врач устраивает диагностику, с анализами на генетические заболевания и УЗИ включительно, и, конечно, проверяет жизнеспособность плода. 
+                    .col-sm-4.col-xs-4
+                      .btn.btn-twoline.disable Бесплатная консультация
+                    .col-sm-4.col-xs-4.text-center
+                      p.p-slim.text-gray.text-uppercase до 15 мая
+                      p.text-green.text-big -55%
+                    .col-sm-4.col-xs-4.text-center
+                      s.text-gray 10 000 Р
+                      p
+                        span.text-darkblue.text-big
+                          | 1 755 
+                          span.rub &#8377;
+                    .clearfix
+                  .caption-footer.caption-footer-slim
+                    .col-xs-8.col-p-0
+                      ul.tab-list
+                        li Резервный экономия цен тест
+                        li Чтобы оплатить отдых в центре
+                    .col-xs-4.col-p-0.text-center
+                      p.text-gray.p-slim.text-uppercase К оплате сейчас:
+                      p.p-slim
+                        strong.text-darkblue.text-big
+                          | 225 
+                          span.rub &#8377;
+  
+                    .clearfix
+
+            .clearfix
+
+            h1.h1-main.h1-main-personal.disable Способ оплаты
+
+            .row
+              .col-xs-12
+                .thumbnail.thumbnail-cards
+                  .caption.pay.notactive
+                    .col-xs-3
+                      p
+                        a href="#" QIWI Кошелек
+                        br
+                        a.pay_logo href="#"
+                          img src="img/qiwi_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Яндекс. Деньги
+                        br
+                        a.pay_logo href="#"
+                          img src="img/yadengi_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Банковская карта
+                        br
+                        a.pay_logo href="#"
+                          img src="img/card_logo.png" alt=""/
+                    .col-xs-3
+                      p
+                        a href="#" Банковский перевод
+                        br
+                        a.pay_logo href="#"
+                          img src="img/vtb_logo.png" alt=""/
+                      / p
+                      /   a href="#" ROBOKASSA
+                      /   br
+                      /   a href="#"
+                      /     img src="img/robo.png" alt=""/
+                    .clearfix
+
+    == Slim::Template.new("footer.slim").render

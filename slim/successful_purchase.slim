@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop.container-authmodal
+      .container.main_inner
+        .row.inner-krosto
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            h1.text-left.h1-main.h1-main-darkblue Бронирование успешно завершено
+
+            .clearfix
+
+            .my_info.my_message
+              h5 Проверьте вашу электронную почту
+              p Мы выслали детали бронирования на вашу персональную почту: yourmail@mail.com
+            .my_info.my_profile
+              h5 Ваш счет
+              p В разделе ваш счет  Вы можете проверить каждую деталь вашего бонуса и запросить счет-фактуру.
+
+            h2.h2-krosto24.h2-border-bottom Как это работает
+            
+            ul.breadcrumb-arrow
+              li
+                p
+                  strong 1
+                  | Вносите аванс или оплачиваете всю сумму
+              li
+                p
+                  strong 2
+                  | Связываетесь с клиникой и записываетесь на прием в удобные дату и время
+              li
+                p
+                  strong 3
+                  | Предъявляете скидку в распечатанном виде или на экране моб. телефона
+  
+
+            h2.h2-krosto24 Ваш заказ
+
+            .row.row-cards
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  a href="#"
+                    img.img-responsive.img-cards-big src="img/cards_big.jpg" alt=""/
+              .col-sm-6.col-xs-6
+                .thumbnail.thumbnail-cards
+                  .caption.caption-cards
+                    a.h3.h3-cards.h3-cards-order href="#" Удаление разными способами
+                    p.p-cards На приеме врач устраивает диагностику, с анализами на генетические заболевания и УЗИ включительно, и, конечно, проверяет жизнеспособность плода. 
+                    .col-sm-4.col-xs-4
+                      .btn.btn-twoline.disable Бесплатная консультация
+                    .col-sm-4.col-xs-4.text-center
+                      p.p-slim.text-gray.text-uppercase до 15 мая
+                      p.text-green.text-big -55%
+                    .col-sm-4.col-xs-4.text-center
+                      s.text-gray 10 000 Р
+                      p
+                        span.text-darkblue.text-big
+                          | 1 755 
+                          span.rub &#8377;
+                    .clearfix
+                  .caption-footer.caption-footer-slim
+                    .col-xs-8.col-p-0
+                      ul.tab-list
+                        li Резервный экономия цен тест
+                        li Чтобы оплатить отдых в центре
+                    .col-xs-4.col-p-0.text-center
+                      p.text-gray.p-slim.text-uppercase К оплате сейчас:
+                      p.p-slim
+                        strong.text-darkblue.text-big
+                          | 225 
+                          span.rub &#8377;
+  
+                    .clearfix
+
+    == Slim::Template.new("footer.slim").render

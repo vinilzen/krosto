@@ -67,7 +67,7 @@ $border-color-gray: #eaeef3;
 	top: 0;
 	bottom: 0;
 	background-color: #fff;
-	opacity:.95;
+	// opacity:1;
 	z-index: 1100;
 }
 .my_auth_modal {
@@ -75,9 +75,25 @@ $border-color-gray: #eaeef3;
 	.modal-dialog {
 		width: 760px;
 		height: 420px;
+		margin: 0 auto;
 		margin-top: 100px;
 	}
 	.modal-body {
 		padding: 0;
 	}
+}
+.my_info {
+	padding: 1px 0px 0px 52px;
+	margin-top: 28px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	&:last-of-type {
+		margin-bottom: 35px;
+	}
+}
+.my_message {
+	background-image: url(../img/my_info.png);
+}
+.my_profile {
+	background-image: url(../img/my_profile.png);
 }

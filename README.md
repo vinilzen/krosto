@@ -16,9 +16,13 @@ http://test.to4ek.net/krosto/forgpass.html
 
 http://test.to4ek.net/krosto/pay_form2.html
 
+http://test.to4ek.net/krosto/pay_form3.html
+
 http://test.to4ek.net/krosto/cards.html
 
 http://test.to4ek.net/krosto/cards_inner2.html
 
 http://test.to4ek.net/krosto/cards_cond.html
+
+http://test.to4ek.net/krosto/successful_purchase.html
 
