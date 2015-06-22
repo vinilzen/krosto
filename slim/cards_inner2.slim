@@ -73,6 +73,27 @@ html
                     a href="#krosto_condition" role="tab" data-toggle="tab" Условия
                 .tab-content.tab-cards
                   #krosto_description.tab-pane.fade.in.active role="tabpanel"
+                    .row.row-map
+                      .col-xs-6
+                        img.img-responsive src="img/map_sq.jpg" alt=""/
+                      .col-xs-6
+                        .media.media-cards-clinic
+                          .media-left
+                            img.cards-clinic-logo src="img/clin.jpg" alt=""/
+                          .media-body
+                            p.h4-link.h4-link-normal.text-darkblue href="#"
+                              | Медицинский центр 
+                              br
+                              | "СМ-Клиника" Санкт-Петербург
+                        h4.tab-title Контакты
+                        p.plain-text.padding-text
+                          span.glyphicon.glyphicon-earphone.glyphicon-green
+                          | +7 (812) 406-11-70 (многоканальный)
+                        p.plain-text.padding-text.metro
+                          span.line2 Московская
+                        p.plain-text.padding-text
+                          span.glyphicon.glyphicon-map-marker.glyphicon-green
+                          | 197198, Санкт-Петербург, пр-т Ударников, дом 19, корп. 1
                     p.tab-text Деятельность акушера-гинеколога направлена на изучение полного спектра процессов, протекающих в теле женщины. Однако, основной его специализацией считается ведение беременности и родов. Помимо этого, в его компетенцию входят: поддержка репродуктивного здоровья женщины, предупреждение выкидышей и недоношенности, борьба с возможными осложнениями в течение беременности, родов, а так же послеродового периода.
                     p.tab-text Это требует немалой квалификации, и на нашем сайте вы можете посмотреть отзывы о врачах, чтобы получить уверенность в наличии необходимых умений и навыках у выбранного специалиста. Записаться на прием к доктору так же просто, достаточно указать свое имя и номер телефона для обратной связи.
 
@@ -120,25 +141,6 @@ html
                       | Бесплатная консультация 
                       span.badge data-toggle="tooltip" title="Tooltip on top" ?
               .col-xs-4.fix-offset-col15
-                .media.media-cards-clinic.media-cards-clinic-right
-                  .media-left
-                    a href="#"
-                      img.cards-clinic-logo src="img/clin.jpg" alt=""/
-                  .media-body
-                    a.h4-link.h4-link-normal.text-darkblue href="#"
-                      | Медицинский центр 
-                      br
-                      | "СМ-Клиника" Санкт-Петербург
-                h4.tab-title Контакты
-                p.plain-text.padding-text
-                  span.glyphicon.glyphicon-earphone.glyphicon-green
-                  | +7 (812) 406-11-70 (многоканальный)
-                p.plain-text.padding-text.metro
-                  span.line2 Московская
-                p.plain-text.padding-text
-                  span.glyphicon.glyphicon-map-marker.glyphicon-green
-                  | 197198, Санкт-Петербург, пр-т Ударников, дом 19, корп. 1
-                p
-                  img.img-responsive src="img/map_sq.jpg" alt=""/
+                img src="https://placeholdit.imgix.net/~text?txtsize=33&bg=292929&txtclr=e3e3e3&txt=275%C3%97300&w=275&h=300" alt=""/
 
     == Slim::Template.new("footer.slim").render

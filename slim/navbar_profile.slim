@@ -1,0 +1,29 @@
+.header
+  .navbar role="navigation" 
+    .navbar-header
+      span.navbar-brand title="Doctu.ru" 
+        img alt="doctu.ru" src="img/logo_doctu.png"
+    div
+      ul.nav.navbar-nav.navbar-left
+        li.active: a.hand[href="partners.html"] Партнерство для клиник
+        li: a[href="about.html"] О проекте
+        li.krosto-city-changer
+          .city-changer.city-changer-cities
+            a.showCities href="#"  Санкт-Петербург
+            ul
+              li.selected.hideCityMenu: a[href="#"] Санкт-Петербург
+              li: a[href="#"] Москва
+
+      ul.nav.navbar-nav.navbar-right.navbar-login
+        li
+          .city-changer.city-changer-menu
+            a.showMenu href="#" Иванов Иван
+            ul
+              li 
+                a.hideProfileMenu href="#" Иванов Иван
+              li 
+                a href="profile.html" Профиль
+              li 
+                a href="#krosto_buy" Покупки
+              li 
+                a href="#" Выйти

@@ -78,6 +78,10 @@
 	border-top: 1px solid $border-color-gray;
 	background-color: #f8f9f9;
 	padding: 20px 17px 16px;
+	.media-cards-clinic {
+		max-width: 250px;
+	}
+
 }
 .caption-footer-slim {
 	padding-top: 14px;
@@ -89,6 +93,28 @@
 }
 .media-cards-clinic {
 	margin-bottom: 0;
+	.media-body {
+		vertical-align: middle;
+		p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			display: -moz-box;
+			max-height: 45px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			-webkit-line-clamp: 2; /* number of lines to show */
+			-webkit-box-orient: vertical;
+			text-overflow: ellipsis;
+			/* span {
+				text-overflow: ellipsis;
+				width: 124px;
+				display: inline-block;
+				vertical-align: middle;
+			} */
+		}
+	}
 }
 .media-cards-clinic-right {
 	margin-bottom: 20px;
@@ -287,4 +313,13 @@
 }
 .notactive {
 	opacity:.4;
+}
+.row-map {
+	margin-bottom: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
+	.col-xs-6 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }

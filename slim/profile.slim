@@ -15,12 +15,12 @@ html
             .row
               .col-xs-12
                 ul.nav.nav-tabs.nav-cards
-                  li role="presentation"
+                  li.active role="presentation"
                     a href="#krosto_buy" role="tab" data-toggle="tab" Поукпки 
-                  li.active
+                  li
                     a href="#krosto_profile" role="tab" data-toggle="tab" Профиль
                 .tab-content.tab-cards
-                  #krosto_buy.tab-pane.fade role="tabpanel"
+                  #krosto_buy.tab-pane.fade.in.active role="tabpanel"
                     
                     .collapsed-krosto
                       .collapsed-krosto-head
@@ -30,15 +30,12 @@ html
                               a href=""
                                 img.img-profile-buy src="img/buy.jpg" alt=""/
                             .media-body
-                              h4.media-heading.media-heading-profile-buy Удаление бородавки разными способами
+                              a.media-heading.media-heading-profile-buy Удаление бородавки разными способами
                               .media.media-cards-clinic.pull-left
                                 .media-left
-                                  a href="#" 
-                                    img.cards-clinic-logo alt="" src="img/clin.jpg" /
+                                  img.cards-clinic-logo alt="" src="img/clin.jpg" /
                                 .media-body
-                                  a.h4-link.text-darkblue href="#"  СМ-Клиника
-                                  p.text-cards-clinic-addr
-                                    | пр. Энгельса, д. 154
+                                  p.h4-link.text-darkblue СМТ на Московском проспекте
                         .col-xs-6
                           .row.row-profile-buy-info
                             .col-xs-5.text-center
@@ -106,15 +103,12 @@ html
                               a href=""
                                 img.img-profile-buy src="img/buy.jpg" alt=""/
                             .media-body
-                              h4.media-heading.media-heading-profile-buy Удаление бородавки разными способами
+                              a.media-heading.media-heading-profile-buy Удаление бородавки разными способами
                               .media.media-cards-clinic.pull-left
                                 .media-left
-                                  a href="#" 
-                                    img.cards-clinic-logo alt="" src="img/clin.jpg" /
+                                  img.cards-clinic-logo alt="" src="img/clin.jpg" /
                                 .media-body
-                                  a.h4-link.text-darkblue href="#"  СМ-Клиника
-                                  p.text-cards-clinic-addr
-                                    | пр. Энгельса, д. 154
+                                  p.h4-link.text-darkblue СМ-Клиника
                         .col-xs-6
                           .row.row-profile-buy-info
                             .col-xs-5.text-center
@@ -168,7 +162,7 @@ html
                                     span.glyphicon.glyphicon-download-alt
                                     |  скачать
 
-                  #krosto_profile.tab-pane.fade.in.active role="tabpanel"
+                  #krosto_profile.tab-pane.fade role="tabpanel"
                     .col-xs-6.col-p-0
                       h3.h3-profile Персональные данные
                       form.form-krosto-profile
