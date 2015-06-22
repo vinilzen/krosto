@@ -47,7 +47,21 @@ h5 {
 .img-cards-big {
 	min-height: 266px;
 }
-h2, .h2 {
+h1.h1-krosto {
+	font-size: 33px;
+	font-weight: 300;
+	color: rgb(51, 51, 51);
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+h2 {
+  font-weight: 300;
+  font-size: 36px;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.h2 {
 	font-size: 18px;
   	color: #555;
   	font-weight: normal;
@@ -63,11 +77,6 @@ h2, .h2 {
 	color:#000;
 	margin-bottom: 0;
 	padding-bottom: 5px;
-}
-.h2-border-bottom {
-	border-bottom:1px solid $border-color-gray;
-	padding-bottom: 15px;
-	margin-bottom: 35px;
 }
 .h1-main {
 	margin-top: 0;
@@ -85,6 +94,31 @@ h2, .h2 {
 	&.disable {
 		opacity: .4;
 	}
+}
+.h2-main {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 20px;
+  	color: #555;
+  	font-weight: 300;
+}
+.h2-main-personal {
+	margin-top: 20px;
+	small {
+		font-weight: 300;
+		font-size: 13px;
+		color: $text-light-gray;
+  		padding-top: 10px;
+	}
+	&.disable {
+		opacity: .4;
+	}
+}
+.h2-border-bottom {
+	border-bottom:1px solid $border-color-gray;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+	margin-top: 30px;
 }
 .h1-main-darkblue {
 	color: $text-darkblue;

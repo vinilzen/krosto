@@ -10,7 +10,7 @@ html
           .col-xs-3.left-sidebar
             == Slim::Template.new("left_filter.slim").render
           .col-xs-9.text.main-side
-            h1.h1-main Ваш заказ
+            h1.h1-krosto Ваш заказ
 
             .row.row-cards
               .col-sm-6.col-xs-6
@@ -50,12 +50,12 @@ html
 
             .clearfix
 
-            h1.h1-main.h1-main-personal.disable Способ оплаты
+            h2.h2-main.h2-main-personal Способ оплаты
 
             .row
               .col-xs-12
                 .thumbnail.thumbnail-cards
-                  .caption.pay.notactive
+                  .caption.pay
                     .col-xs-3
                       p
                         a href="#" QIWI Кошелек

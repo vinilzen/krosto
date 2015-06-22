@@ -62,8 +62,7 @@
 		color:#fff;
 	}
 	strong {
-		text-transform: uppercase;
-		font-size: 12px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	span {
@@ -279,6 +278,10 @@
 		margin-bottom: 10px;
 		&:hover, &:focus {
 			text-decoration: none;
+		}
+		&.disabled:hover, &.disabled:focus {
+			text-decoration: underline;
+			cursor: text;
 		}
 	}
 }

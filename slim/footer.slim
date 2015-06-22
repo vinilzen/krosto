@@ -18,6 +18,7 @@
   .modal-dialog role="document" 
     .modal-content
       .modal-body
+        button.close type="button" data-dismiss="modal" aria-hidden="true" ×
         == Slim::Template.new("auth.slim").render
 
 == Slim::Template.new("script.slim").render

@@ -41,7 +41,6 @@ $border-color-gray: #eaeef3;
 .btn-instr {
 	padding-left: 35px;
 	padding-right: 35px;
-	text-transform: uppercase;
 }
 .text-forgot {
 	margin-top: 20px;
@@ -69,12 +68,13 @@ $border-color-gray: #eaeef3;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #fff;
-	// opacity:1;
+	background-color:rgba(0, 0, 0, 0.5);
 	z-index: 1100;
 }
 .my_auth_modal {
 	display: none;
+	position: absolute;
+	z-index: 1102;
 	.modal-dialog {
 		width: 760px;
 		height: 420px;
@@ -83,7 +83,15 @@ $border-color-gray: #eaeef3;
 	}
 	.modal-body {
 		padding: 0;
+		position: relative;
+		.close {
+			position: absolute;
+			right: 8px;
+			top: 5px;
+			z-index: 1101;
+		}
 	}
+
 }
 .my_info {
 	padding: 1px 0px 0px 52px;

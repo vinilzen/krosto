@@ -109,9 +109,18 @@ $(function(){
 			$('.auth_backdrop').remove();
 		} else {
 			var auth_backdrop = $('<div class="auth_backdrop"></div>')
+				.click(function(){
+					$('#myModalAuth').hide().appendTo('body');
+					$('.auth_backdrop').remove();
+				})
 				.appendTo('.container-authmodal');
-			$('#myModalAuth').appendTo(auth_backdrop).fadeIn();
+			$('#myModalAuth').appendTo('.container-authmodal').fadeIn();
 		}
+	});
+
+	$('.my_auth_modal .close').click(function(){
+		$('#myModalAuth').hide().appendTo('body');
+		$('.auth_backdrop').remove();
 	});
 
 });

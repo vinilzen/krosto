@@ -10,7 +10,7 @@ html
           .col-xs-3.left-sidebar
             == Slim::Template.new("left_filter.slim").render
           .col-xs-9.text.main-side
-            h1.h1-main Ваш заказ
+            h1.h1-krosto Ваш заказ
 
             .row.row-cards
               .col-sm-6.col-xs-6
@@ -50,14 +50,14 @@ html
 
             .clearfix
 
-            h1.h1-main.h1-main-personal
+            h2.h2-main.h2-main-personal
               | Личные данные
               small.pull-right Для того, что бы оформить покупку войдите или зарегитрируйтесь
             .row
               .col-xs-12
                 == Slim::Template.new("auth.slim").render
 
-            h1.h1-main.h1-main-personal.disable Способ оплаты
+            h2.h2-main.h2-main-personal.disable Способ оплаты
 
             .row
               .col-xs-12
@@ -65,27 +65,27 @@ html
                   .caption.pay.notactive
                     .col-xs-3
                       p
-                        a href="#" QIWI Кошелек
+                        a.disabled href="#" QIWI Кошелек
                         br
-                        a.pay_logo href="#"
+                        a.pay_logo.disabled href="#"
                           img src="img/qiwi_logo.png" alt=""/
                     .col-xs-3
                       p
-                        a href="#" Яндекс. Деньги
+                        a.disabled href="#" Яндекс. Деньги
                         br
-                        a.pay_logo href="#"
+                        a.pay_logo.disabled href="#"
                           img src="img/yadengi_logo.png" alt=""/
                     .col-xs-3
                       p
-                        a href="#" Банковская карта
+                        a.disabled href="#" Банковская карта
                         br
-                        a.pay_logo href="#"
+                        a.disabled.pay_logo href="#"
                           img src="img/card_logo.png" alt=""/
                     .col-xs-3
                       p
-                        a href="#" Банковский перевод
+                        a.disabled href="#" Банковский перевод
                         br
-                        a.pay_logo href="#"
+                        a.disabled.pay_logo href="#"
                           img src="img/vtb_logo.png" alt=""/
                       / p
                       /   a href="#" ROBOKASSA

@@ -10,7 +10,7 @@ html
           .col-xs-3.left-sidebar
             == Slim::Template.new("left_filter.slim").render
           .col-xs-9.text.main-side
-            h1.text-left.h1-main.h1-main-darkblue Личный кабинет  
+            h1.h1-krosto.text-left Личный кабинет  
 
             .row
               .col-xs-12
@@ -171,7 +171,7 @@ html
                   #krosto_profile.tab-pane.fade.in.active role="tabpanel"
                     .col-xs-6.col-p-0
                       h3.h3-profile Персональные данные
-                      form.form-krosto
+                      form.form-krosto-profile
                         .form-group
                           input.form-control type="text" placeholder="Имя"
                         .form-group
@@ -216,10 +216,10 @@ html
                               | Не подтвержден
                         .form-group
                           input.form-control type="text" placeholder="Электронная почта"
-                        .btn.btn-success.btn-instr сохранить изменения
+                        .btn.btn-success.btn-instr Сохранить изменения
                     .col-xs-6.col-p-0
                       h3.h3-profile Изменить пароль
-                      form.form-krosto
+                      form.form-krosto-profile
                         .form-group
                           input.form-control type="text" placeholder="Новый пароль"
                           .help-block Не менее 6 символов
