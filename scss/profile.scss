@@ -1,0 +1,143 @@
+.collapsed-krosto {
+	border:1px solid $border-color-gray;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.collapsed-krosto-head {
+	padding: 20px 0;
+	background-color: #f8f9f9;
+}
+
+.img-profile-buy {
+	max-width: 205px;
+	max-height: 100px;
+}
+.media-profile-buy {
+	margin-bottom: 0;
+}
+.media-heading-profile-buy {
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+.badge-chevron {
+	margin-top: 18px;
+	margin-bottom: 18px;
+	.glyphicon {
+		padding-left: 2px;
+		padding-top: 3px;
+	}
+}
+.badge-ok {
+	font-size: 10px;
+	background-color: #0da646;
+}
+.badge-remove {
+	font-size: 10px;
+	background-color: #d9534f;
+}
+.text-ok {
+
+}
+.row-profile-buy-info {
+	padding-top: 25px;
+	padding-bottom: 20px;
+	[class^="col-"] {
+		border-left: 1px solid $border-color-gray;
+	}
+}
+
+/* .table-profile-buy-head {
+	margin-left: -18px;
+	margin-right: -18px;
+} */
+.table-profile-buy {
+	margin-bottom: -1px;
+	&>tbody>tr {
+		margin-left: 10px;
+		&>td {
+			color:$text-light-gray;
+			font-weight: 300;
+			font-size: 16px;
+			padding-top: 35px;
+			padding-bottom: 25px;
+			padding-left: 0;
+			.text-dark {
+				font-weight: normal;
+			}
+			.text-light-gray {
+				font-size: 13px;
+			}
+			&:first-child {
+				width: 400px;
+			}
+			&:nth-child(2) {
+				width: 250px;
+			}
+		}
+		&.disable {
+			td {
+				opacity:.35;
+			}
+		}
+	}
+}
+.table-profile-buy>thead>tr>th {
+	border-bottom-width: 1px;
+	font-weight: 300;
+	font-size: 13px;
+	color:$text-light-gray;
+	opacity:.55;
+	padding-left: 18px;
+	&:first-child {
+		width: 400px;
+	}
+	&:nth-child(2) {
+		width: 250px;
+	}
+}
+.table-responsive-profile-buy {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.col-form-3 {
+	width: 90px;
+	display: inline-block;
+}
+.col-form-6 {
+	width: 150px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.form-krosto {
+	width: 370px;
+	margin: 0;
+	.form-group {
+		margin-bottom: 20px;
+	}
+	.form-control {
+		line-height: 40px;
+		height: 40px;
+	}
+	.btn-instr {
+		padding: 10px 38px 9px;
+	}
+}
+.form-control-phone {
+	width: 220px;
+	display: inline-block;
+}
+.help-block {
+	color:$text-light-gray;
+	opacity:.5;
+	padding-left: 17px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+.help-phone {
+	display: inline-block;
+	margin-left: 15px;
+	.text-light-gray {
+		opacity:.8;
+	}
+}

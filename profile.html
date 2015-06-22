@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="favicon.gif" rel="icon" />
+    <title>Krosto.ru</title>
+    <meta content="width=device-width" name="viewport" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic-ext" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-modal.css" rel="stylesheet" />
+    <link href="css/krosto.css" rel="stylesheet" />
+    <!--[if lte IE 9] link href="css/ie9.css" rel="stylesheet"--><!--[if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar" role="navigation">
+        <div class="navbar-header">
+          <span class="navbar-brand" title="Doctu.ru"><img alt="doctu.ru" src="img/logo_doctu.png" /></span>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active">
+              <a class="hand" href="partners.html">Партнерство для клиник</a>
+            </li>
+            <li>
+              <a href="about.html">О проекте</a>
+            </li>
+            <li class="krosto-city-changer">
+              <div class="city-changer">
+                <a class="showCities" href="#"> Санкт-Петербург</a>
+                <ul>
+                  <li class="selected">
+                    <a href="#">Санкт-Петербург</a>
+                  </li>
+                  <li>
+                    <a href="#">Москва</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-login">
+            <li>
+              <a class="myModalAuth" href="#">Вход / Регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid borderbot bordertop container-authmodal">
+      <div class="container main_inner">
+        <div class="row inner-krosto">
+          <div class="col-xs-3 left-sidebar">
+            <aside>
+              <div id="leftFilter">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default open">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Фильтр поиска<span class="ico-collapse"></span></a>
+                      </h4>
+                    </div>
+                    <div class="panel-collapse collapse in lvl1" id="collapseOne">
+                      <div class="panel-body">
+                        <form role="form">
+                          <div class="form-group">
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Название услуги" type="text" />
+                          </div>
+                          <div class="form-group">
+                            <select class="form-control" data-placeholder="Специализация" id="doctorSpecialitySelectLeft" name="speciality">
+                              <option value=""></option>
+                              <option value="akusher">
+                                Акушер
+                              </option>
+                              <option value="akusher-ginekolog">
+                                Акушер-гинеколог
+                              </option>
+                              <option value="allergolog">
+                                Аллерголог
+                              </option>
+                              <option value="angioxirurg">
+                                Ангиохирург
+                              </option>
+                              <option value="androlog">
+                                Андролог
+                              </option>
+                              <option value="anesteziolog">
+                                Анестезиолог
+                              </option>
+                              <option value="venerolog">
+                                Венеролог
+                              </option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <select class="form-control" data-placeholder="Область" disabled="disabled" id="doctorSpecialitySelectLeft" name="speciality">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                          <div class="form-group" multiple="">
+                            <select class="form-control" data-placeholder="Район или метро" id="doctorMetroSelectLeft" multiple="" name="metro[]"><optgroup label="Районы">
+                                <option value=""></option>
+                                <option value="czao">
+                                  ЦАО
+                                </option>
+                                <option value="svao">
+                                  СВАО
+                                </option>
+                                <option value="vao">
+                                  ВАО
+                                </option>
+                                <option value="yuvao">
+                                  ЮВАО
+                                </option>
+                                <option value="zao">
+                                  ЗАО
+                                </option>
+                                <option value="szao">
+                                  СЗАО
+                                </option>
+                              </optgroup><optgroup label="Метро">
+                                <option value=""></option>
+                                <option value="alekseevskaya">
+                                  Алексеевская
+                                </option>
+                                <option value="babushkinskaya">
+                                  Бабушкинская
+                                </option>
+                                <option value="belorusskaya">
+                                  Белорусская
+                                </option>
+                                <option value="botanicheskij-sad">
+                                  Ботанический сад
+                                </option>
+                              </optgroup></select>
+                          </div>
+                          <button class="btn btn-block btn-primary" type="button"> Найти</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-xs-9 text main-side">
+            <h1 class="text-left h1-main h1-main-darkblue">
+              Личный кабинет  
+            </h1>
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="nav nav-tabs nav-cards">
+                  <li role="presentation">
+                    <a data-toggle="tab" href="#krosto_buy" role="tab">Поукпки </a>
+                  </li>
+                  <li class="active">
+                    <a data-toggle="tab" href="#krosto_profile" role="tab">Профиль</a>
+                  </li>
+                </ul>
+                <div class="tab-content tab-cards">
+                  <div class="tab-pane fade" id="krosto_buy" role="tabpanel">
+                    <div class="collapsed-krosto">
+                      <div class="collapsed-krosto-head">
+                        <div class="col-xs-6">
+                          <div class="media media-profile-buy">
+                            <div class="media-left">
+                              <a href=""><img alt="" class="img-profile-buy" src="img/buy.jpg" /></a>
+                            </div>
+                            <div class="media-body">
+                              <h4 class="media-heading media-heading-profile-buy">
+                                Удаление бородавки разными способами
+                              </h4>
+                              <div class="media media-cards-clinic pull-left">
+                                <div class="media-left">
+                                  <a href="#"><img alt="" class="cards-clinic-logo" src="img/clin.jpg" /></a>
+                                </div>
+                                <div class="media-body">
+                                  <a class="h4-link text-darkblue" href="#"> СМ-Клиника</a>
+                                  <p class="text-cards-clinic-addr">
+                                    пр. Энгельса, д. 154
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="row row-profile-buy-info">
+                            <div class="col-xs-5 text-center">
+                              <p class="p-slim text-gray text-uppercase">
+                                стоимость
+                              </p>
+                              <p class="p-slim text-green text-big">
+                                1 755 <span class="rub">&#8377;</span>
+                              </p>
+                            </div>
+                            <div class="col-xs-5 text-center">
+                              <p class="p-slim text-gray text-uppercase">
+                                дата брони
+                              </p>
+                              <p class="p-slim text-dark text-big">
+                                26.11.2015
+                              </p>
+                            </div>
+                            <div class="col-xs-2">
+                              <a class="badge badge-chevron" data-toggle="collapse" href="#buy1">
+                                <div class="glyphicon glyphicon-chevron-down"></div>
+                                <div class="glyphicon glyphicon-chevron-up hide"></div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="collapsed-krosto-body collapse in" id="buy1">
+                        <table class="table table-profile-buy">
+                          <thead>
+                            <tr>
+                              <th>
+                                Услуга
+                              </th>
+                              <th>
+                                Стоимость
+                              </th>
+                              <th>
+                                Статус оплаты
+                              </th>
+                            </tr>
+                          </thead>
+                        </table>
+                        <div class="table-responsive-profile-buy">
+                          <table class="table table-profile-buy">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Первичный осмотр
+                                </td>
+                                <td>
+                                  <p class="p-slim text-dark">
+                                    0 Р
+                                  </p>
+                                </td>
+                                <td>
+                                  <div class="badge badge-ok">
+                                    <div class="glyphicon glyphicon-ok"></div>
+                                  </div>
+                                  <span class="text-light-gray">Оплачено</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  Удаление бородавки разными способами
+                                </td>
+                                <td>
+                                  <p class="p-slim text-dark">
+                                    14 500 Р
+                                  </p>
+                                </td>
+                                <td>
+                                  <a class="btn btn-success">Оплатить</a>
+                                </td>
+                              </tr>
+                              <tr class="disable">
+                                <td>
+                                  Первичный осмотр
+                                </td>
+                                <td>
+                                  <p class="p-slim text-dark">
+                                    0 Р
+                                  </p>
+                                </td>
+                                <td>
+                                  <span class="text-light-gray">Не оплачено</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-print"></span> Печать
+                                  </div>
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-envelope"></span> email
+                                  </div>
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-download-alt"></span> скачать
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapsed-krosto">
+                      <div class="collapsed-krosto-head">
+                        <div class="col-xs-6">
+                          <div class="media media-profile-buy">
+                            <div class="media-left">
+                              <a href=""><img alt="" class="img-profile-buy" src="img/buy.jpg" /></a>
+                            </div>
+                            <div class="media-body">
+                              <h4 class="media-heading media-heading-profile-buy">
+                                Удаление бородавки разными способами
+                              </h4>
+                              <div class="media media-cards-clinic pull-left">
+                                <div class="media-left">
+                                  <a href="#"><img alt="" class="cards-clinic-logo" src="img/clin.jpg" /></a>
+                                </div>
+                                <div class="media-body">
+                                  <a class="h4-link text-darkblue" href="#"> СМ-Клиника</a>
+                                  <p class="text-cards-clinic-addr">
+                                    пр. Энгельса, д. 154
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="row row-profile-buy-info">
+                            <div class="col-xs-5 text-center">
+                              <p class="p-slim text-gray text-uppercase">
+                                стоимость
+                              </p>
+                              <p class="p-slim text-green text-big">
+                                1 755 <span class="rub">&#8377;</span>
+                              </p>
+                            </div>
+                            <div class="col-xs-5 text-center">
+                              <p class="p-slim text-gray text-uppercase">
+                                дата брони
+                              </p>
+                              <p class="p-slim text-dark text-big">
+                                26.11.2015
+                              </p>
+                            </div>
+                            <div class="col-xs-2">
+                              <a class="badge badge-chevron" data-toggle="collapse" href="#buy2">
+                                <div class="glyphicon glyphicon-chevron-down"></div>
+                                <div class="glyphicon glyphicon-chevron-up hide"></div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="collapsed-krosto-body collapse" id="buy2">
+                        <table class="table table-profile-buy">
+                          <thead>
+                            <tr>
+                              <th>
+                                Услуга
+                              </th>
+                              <th>
+                                Стоимость
+                              </th>
+                              <th>
+                                Статус оплаты
+                              </th>
+                            </tr>
+                          </thead>
+                        </table>
+                        <div class="table-responsive-profile-buy">
+                          <table class="table table-profile-buy">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  Первичный осмотр
+                                </td>
+                                <td>
+                                  <p class="p-slim text-dark">
+                                    220 Р
+                                  </p>
+                                </td>
+                                <td>
+                                  <div class="badge badge-ok">
+                                    <div class="glyphicon glyphicon-ok"></div>
+                                  </div>
+                                  <span class="text-light-gray">Оплачено</span>
+                                </td>
+                              </tr>
+                              <tr class="disable">
+                                <td>
+                                  Первичный осмотр
+                                </td>
+                                <td>
+                                  <p class="p-slim text-dark">
+                                    0 Р
+                                  </p>
+                                </td>
+                                <td>
+                                  <span class="text-light-gray">Не оплачено</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="3">
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-print"></span> Печать
+                                  </div>
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-envelope"></span> email
+                                  </div>
+                                  <div class="btn btn-gray text-uppercase">
+                                    <span class="glyphicon glyphicon-download-alt"></span> скачать
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade in active" id="krosto_profile" role="tabpanel">
+                    <div class="col-xs-6 col-p-0">
+                      <h3 class="h3-profile">
+                        Персональные данные
+                      </h3>
+                      <form class="form-krosto">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Имя" type="text" />
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Фамилия" type="text" />
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option>
+                              Санкт-Петербург
+                            </option>
+                            <option>
+                              Москва
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control col-form-3">
+                            <option>
+                              17
+                            </option>
+                            <option>
+                              18
+                            </option>
+                            <option>
+                              19
+                            </option>
+                          </select><select class="form-control col-form-6">
+                            <option>
+                              Сентябрь
+                            </option>
+                            <option>
+                              Октябрь
+                            </option>
+                          </select><select class="form-control col-form-3">
+                            <option>
+                              1997
+                            </option>
+                            <option>
+                              1998
+                            </option>
+                            <option>
+                              1999
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option>
+                              Мужской
+                            </option>
+                            <option>
+                              Женский
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control form-control-phone" placeholder="+7 (911) 123-57-16" type="text" />
+                          <div class="help-text help-phone">
+                            <div class="badge badge-ok">
+                              <div class="glyphicon glyphicon-ok"></div>
+                            </div>
+                            <span class="text-light-gray">Подтвержден</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control form-control-phone" placeholder="+7 (911) 123-57-16" type="text" />
+                          <div class="help-text help-phone">
+                            <div class="badge badge-remove">
+                              <div class="glyphicon glyphicon-remove"></div>
+                            </div>
+                            <span class="text-light-gray">Не подтвержден</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Электронная почта" type="text" />
+                        </div>
+                        <div class="btn btn-success btn-instr">
+                          сохранить изменения
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-xs-6 col-p-0">
+                      <h3 class="h3-profile">
+                        Изменить пароль
+                      </h3>
+                      <form class="form-krosto">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Новый пароль" type="text" />
+                          <div class="help-block">
+                            Не менее 6 символов
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Ещё раз" type="text" />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="copy">
+          <p>
+            &copy; 2012-2014 Krosto.ru &mdash; запись к врачу в <a href="#">Москве</a>, <a href="#">Санкт-Петербурге</a>
+          </p>
+        </div>
+        <div class="text-right links">
+          <ul class="list-inline">
+            <li>
+              <a href="#">Справочник пациента</a>
+            </li>
+            <li>
+              <a href="terms.html">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Modal-->
+    <div aria-labelledby="myModalAuth" class="my_auth_modal modal" id="myModalAuth" role="dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="thumbnail thumbnail-cards">
+              <div class="caption">
+                <div class="row">
+                  <div class="col-xs-6 col-p-0 col-border">
+                    <h1 class="h1-main h1-form text-center">
+                      Вход
+                    </h1>
+                    <form class="form-krosto">
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Электронная почта" type="email" />
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Пароль" type="password" />
+                      </div>
+                      <p class="pull-right">
+                        <a href="forgpass.html">Напомнить пароль</a>
+                      </p>
+                      <div class="checkbox pull-left">
+                        <label><input type="checkbox" />Запомнить меня</label>
+                      </div>
+                      <button class="btn btn-success-blank btn-block text-uppercase" type="submit">Войти</button>
+                    </form>
+                  </div>
+                  <div class="col-xs-6 col-p-0">
+                    <h1 class="h1-main h1-form text-center">
+                      Регистрация
+                    </h1>
+                    <form class="form-krosto">
+                      <div class="form-group">
+                        <input class="form-control" placeholder="Электронная почта" type="email" />
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>
+                            Санкт-Петербург
+                          </option>
+                          <option>
+                            Москва
+                          </option>
+                        </select>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" />С правилами <a href="terms.html">оферты</a> согласен</label>
+                      </div>
+                      <button class="btn btn-success btn-block text-uppercase" type="submit">Зарегистрироваться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="caption-footer">
+                <p class="text-center p-slim">
+                  Войти через:<a class="btn btn-soc btn-fb" href="#"><img src="img/fb-ico.png" />facebook</a><a class="btn btn-soc btn-vk" href="#"><img src="img/vk-ico.png" />Вконтакте</a><a class="btn btn-soc btn-ma" href="#"><img src="img/ma-ico.png" />mail.ru</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

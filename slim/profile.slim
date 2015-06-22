@@ -1,0 +1,233 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop.container-authmodal
+      .container.main_inner
+        .row.inner-krosto
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            h1.text-left.h1-main.h1-main-darkblue Личный кабинет  
+
+            .row
+              .col-xs-12
+                ul.nav.nav-tabs.nav-cards
+                  li role="presentation"
+                    a href="#krosto_buy" role="tab" data-toggle="tab" Поукпки 
+                  li.active
+                    a href="#krosto_profile" role="tab" data-toggle="tab" Профиль
+                .tab-content.tab-cards
+                  #krosto_buy.tab-pane.fade role="tabpanel"
+                    
+                    .collapsed-krosto
+                      .collapsed-krosto-head
+                        .col-xs-6
+                          .media.media-profile-buy
+                            .media-left
+                              a href=""
+                                img.img-profile-buy src="img/buy.jpg" alt=""/
+                            .media-body
+                              h4.media-heading.media-heading-profile-buy Удаление бородавки разными способами
+                              .media.media-cards-clinic.pull-left
+                                .media-left
+                                  a href="#" 
+                                    img.cards-clinic-logo alt="" src="img/clin.jpg" /
+                                .media-body
+                                  a.h4-link.text-darkblue href="#"  СМ-Клиника
+                                  p.text-cards-clinic-addr
+                                    | пр. Энгельса, д. 154
+                        .col-xs-6
+                          .row.row-profile-buy-info
+                            .col-xs-5.text-center
+                              p.p-slim.text-gray.text-uppercase стоимость
+                              p.p-slim.text-green.text-big 
+                                | 1 755 
+                                span.rub &#8377;
+                            .col-xs-5.text-center
+                              p.p-slim.text-gray.text-uppercase дата брони
+                              p.p-slim.text-dark.text-big 26.11.2015
+                            .col-xs-2
+                              a.badge.badge-chevron data-toggle="collapse" href="#buy1"
+                                .glyphicon.glyphicon-chevron-down
+                                .glyphicon.glyphicon-chevron-up.hide
+                        .clearfix
+                      .collapsed-krosto-body.collapse.in#buy1
+                        table.table.table-profile-buy
+                          thead
+                            tr
+                              th Услуга
+                              th Стоимость
+                              th Статус оплаты
+                        .table-responsive-profile-buy
+                          table.table.table-profile-buy
+                            tbody
+                              tr
+                                td Первичный осмотр
+                                td
+                                  p.p-slim.text-dark 0 Р
+                                td
+                                  .badge.badge-ok
+                                      .glyphicon.glyphicon-ok
+                                  span.text-light-gray
+                                    | Оплачено
+                              tr
+                                td Удаление бородавки разными способами
+                                td
+                                  p.p-slim.text-dark 14 500 Р
+                                td
+                                  a.btn.btn-success Оплатить
+                              tr.disable
+                                td Первичный осмотр
+                                td
+                                  p.p-slim.text-dark 0 Р
+                                td
+                                  span.text-light-gray
+                                    | Не оплачено
+                              tr
+                                td colspan="3"
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-print
+                                    |  Печать
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-envelope
+                                    |  email
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-download-alt
+                                    |  скачать
+
+                    .collapsed-krosto
+                      .collapsed-krosto-head
+                        .col-xs-6
+                          .media.media-profile-buy
+                            .media-left
+                              a href=""
+                                img.img-profile-buy src="img/buy.jpg" alt=""/
+                            .media-body
+                              h4.media-heading.media-heading-profile-buy Удаление бородавки разными способами
+                              .media.media-cards-clinic.pull-left
+                                .media-left
+                                  a href="#" 
+                                    img.cards-clinic-logo alt="" src="img/clin.jpg" /
+                                .media-body
+                                  a.h4-link.text-darkblue href="#"  СМ-Клиника
+                                  p.text-cards-clinic-addr
+                                    | пр. Энгельса, д. 154
+                        .col-xs-6
+                          .row.row-profile-buy-info
+                            .col-xs-5.text-center
+                              p.p-slim.text-gray.text-uppercase стоимость
+                              p.p-slim.text-green.text-big 
+                                | 1 755 
+                                span.rub &#8377;
+                            .col-xs-5.text-center
+                              p.p-slim.text-gray.text-uppercase дата брони
+                              p.p-slim.text-dark.text-big 26.11.2015
+                            .col-xs-2
+                              a.badge.badge-chevron data-toggle="collapse" href="#buy2"
+                                .glyphicon.glyphicon-chevron-down
+                                .glyphicon.glyphicon-chevron-up.hide
+                        .clearfix
+                      .collapsed-krosto-body.collapse#buy2
+                        table.table.table-profile-buy
+                          thead
+                            tr
+                              th Услуга
+                              th Стоимость
+                              th Статус оплаты
+                        .table-responsive-profile-buy
+                          table.table.table-profile-buy
+                            tbody
+                              tr
+                                td Первичный осмотр
+                                td
+                                  p.p-slim.text-dark 220 Р
+                                td
+                                  .badge.badge-ok
+                                      .glyphicon.glyphicon-ok
+                                  span.text-light-gray
+                                    | Оплачено
+                              tr.disable
+                                td Первичный осмотр
+                                td
+                                  p.p-slim.text-dark 0 Р
+                                td
+                                  span.text-light-gray
+                                    | Не оплачено
+                              tr
+                                td colspan="3"
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-print
+                                    |  Печать
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-envelope
+                                    |  email
+                                  .btn.btn-gray.text-uppercase
+                                    span.glyphicon.glyphicon-download-alt
+                                    |  скачать
+
+                  #krosto_profile.tab-pane.fade.in.active role="tabpanel"
+                    .col-xs-6.col-p-0
+                      h3.h3-profile Персональные данные
+                      form.form-krosto
+                        .form-group
+                          input.form-control type="text" placeholder="Имя"
+                        .form-group
+                          input.form-control type="text" placeholder="Фамилия"
+                        .form-group
+                          select.form-control
+                            option Санкт-Петербург
+                            option Москва
+
+                        .form-group
+                          select.form-control.col-form-3
+                            option 17
+                            option 18
+                            option 19
+                          select.form-control.col-form-6
+                            option Сентябрь
+                            option Октябрь
+                          select.form-control.col-form-3
+                            option 1997
+                            option 1998
+                            option 1999
+
+                        .form-group
+                          select.form-control
+                            option Мужской
+                            option Женский
+
+                        .form-group
+                          input.form-control.form-control-phone type="text" placeholder="+7 (911) 123-57-16"
+                          .help-text.help-phone
+                            .badge.badge-ok
+                              .glyphicon.glyphicon-ok
+                            span.text-light-gray
+                              | Подтвержден
+
+                        .form-group
+                          input.form-control.form-control-phone type="text" placeholder="+7 (911) 123-57-16"
+                          .help-text.help-phone
+                            .badge.badge-remove
+                              .glyphicon.glyphicon-remove
+                            span.text-light-gray
+                              | Не подтвержден
+                        .form-group
+                          input.form-control type="text" placeholder="Электронная почта"
+                        .btn.btn-success.btn-instr сохранить изменения
+                    .col-xs-6.col-p-0
+                      h3.h3-profile Изменить пароль
+                      form.form-krosto
+                        .form-group
+                          input.form-control type="text" placeholder="Новый пароль"
+                          .help-block Не менее 6 символов
+                        .form-group
+                          input.form-control type="text" placeholder="Ещё раз"
+
+                    .clearfix
+
+
+
+    == Slim::Template.new("footer.slim").render

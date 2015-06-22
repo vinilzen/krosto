@@ -10,8 +10,14 @@
 .text-gray {
 	color:$text-gray;
 }
+.text-light-gray {
+	color: $text-light-gray;
+}
+.text-dark {
+	color:$text-dark;
+}
 .text-thin {
-
+	font-weight: 300;
 }
 h5 {
 	font-size: 14px;
@@ -27,6 +33,13 @@ h5 {
 	margin-top: 25px;
 	margin-bottom: 10px;
 	display: block;
+}
+.h3-profile {
+	font-weight: bold;
+	font-size: 18px;
+	color:#333333;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 .caption .h3-cards-order {
 	margin-top: 15px;
@@ -179,4 +192,16 @@ h2, .h2 {
 .btn-ma {
 	color:#fff;
 	background-color: #3688c9;
+}
+.btn-gray {
+	background-color: #f8f9f9;
+	border-color: $border-color-gray;
+	font-size: 12px;
+	font-weight: bold;
+	color: rgba(85, 85, 85, 0.8);
+	margin-right: 15px;
+	.glyphicon {
+		color:#cdcdcd;
+		margin-right: 5px;
+	}
 }

@@ -1,6 +1,7 @@
 $text-darkblue: #211b70;
 $text-green: #0da646;
 $text-gray: #888;
+$text-dark: #010101;
 $text-light-gray: #555;
 $border-color-gray: #eaeef3;
 
@@ -10,6 +11,8 @@ $border-color-gray: #eaeef3;
 @import "cards";
 @import "type";
 @import "auth";
+@import "profile";
+
 
 .inner-krosto {
   width: 1180px;
