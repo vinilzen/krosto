@@ -108,3 +108,51 @@ $border-color-gray: #eaeef3;
 .my_profile {
 	background-image: url(../img/my_profile.png);
 }
+.header .city-changer-menu {
+	text-align: right;
+  	width: 120px;
+	ul {
+		text-align:left;
+  		right: -20px;
+  		left:inherit;
+  		li {
+  			a {
+  				display:inline;
+	  			&:hover, &:focus {
+					border-bottom: 1px solid #e3e3e3; 
+					text-decoration: none;
+	  			}
+  			}
+  		}
+  		li:first-child {
+  			a {
+  				border-bottom: 1px solid #e3e3e3; 
+  			}
+  		}
+	}
+}
+.header .city-changer-cities {
+	width: 190px;
+	ul {
+		position: absolute;
+		left:-1px;
+		top: 3px;
+		li {
+			a {
+				display:inline;
+	  			&:hover, &:focus {
+					border-bottom: 1px solid #e3e3e3; 
+					text-decoration: none;
+	  			}
+			}
+			&.selected {
+				border-bottom: none;
+			}
+	  		&:first-child {
+	  			a {
+	  				border-bottom: 1px solid #e3e3e3; 
+	  			}
+	  		}
+		}
+	}
+}

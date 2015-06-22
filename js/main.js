@@ -123,4 +123,18 @@ $(function(){
 		$('.auth_backdrop').remove();
 	});
 
+	$('.showMenu').click(function(){
+		$('.city-changer-menu ul').fadeIn();
+	});
+	$('.hideProfileMenu').click(function(){
+		$('.city-changer-menu ul').fadeOut();
+	});
+	$('.showCities').click(function(){
+		$('.city-changer-cities ul').fadeIn();
+	});
+	$('.hideCityMenu').click(function(){
+		$('.city-changer-cities ul').fadeOut();
+	});
+
+
 });
