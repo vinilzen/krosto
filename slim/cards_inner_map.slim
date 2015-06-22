@@ -65,7 +65,7 @@ html
   
 
             .row.fix-offset-row15
-              .col-xs-8.fix-offset-col15
+              .col-krosto-main.fix-offset-col15
                 ul.nav.nav-tabs.nav-cards
                   li.active role="presentation"
                     a href="#krosto_description" role="tab" data-toggle="tab" Описание 
@@ -74,26 +74,59 @@ html
                 .tab-content.tab-cards
                   #krosto_description.tab-pane.fade.in.active role="tabpanel"
                     .row.row-map
-                      .col-xs-6
-                        img.img-responsive src="img/map_sq.jpg" alt=""/
-                      .col-xs-6
-                        .media.media-cards-clinic
-                          .media-left
-                            img.cards-clinic-logo src="img/clin.jpg" alt=""/
-                          .media-body
-                            p.h4-link.h4-link-normal.text-darkblue href="#"
-                              | Медицинский центр 
-                              br
-                              | "СМ-Клиника" Санкт-Петербург
-                        .contact-krosto
-                          p.plain-text.padding-text
-                            span.glyphicon.glyphicon-earphone.glyphicon-green
-                            | +7 (812) 406-11-70 (многоканальный)
-                          p.plain-text.padding-text.metro
-                            span.line2 Московская
-                          p.plain-text.padding-text
-                            span.glyphicon.glyphicon-map-marker.glyphicon-green
-                            | 197198, Санкт-Петербург, пр-т Ударников, дом 19, корп. 1
+                      #ymap-krosto
+                      script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"
+                      javascript:
+                        ymaps.ready(init);
+
+                        function init() {
+                            var myMap = new ymaps.Map('ymap-krosto', {
+                                    center: [55.753994, 37.622093],
+                                    zoom: 9,
+                                    controls: []
+                                }, { searchControlProvider: 'yandex#search' });
+
+                            // Поиск координат центра Нижнего Новгорода.
+                            ymaps.geocode('Санкт-Петербург, пр-т Ударников, дом 19, корп. 1', {
+                                results: 1 // Если нужен только один результат, экономим трафик пользователей
+                            }).then(function (res) {
+                                    // Выбираем первый результат геокодирования.
+                                    var firstGeoObject = res.geoObjects.get(0),
+                                        coords = firstGeoObject.geometry.getCoordinates(),
+                                        // Область видимости геообъекта.
+                                        bounds = firstGeoObject.properties.get('boundedBy');
+
+                                    // Масштабируем карту на область видимости геообъекта.
+                                    myMap.setBounds(bounds, {
+                                        checkZoomRange: true
+                                    });
+                                    
+                                    var myPlacemark = new ymaps.Placemark(coords, {
+                                        balloonContentHeader: "СМ-Клиника Санкт-Петербург",
+                                        balloonPanelMaxMapArea: 0,
+                                        balloonContent: [
+                                            '<div class="contact-krosto">',
+                                                '<p class="plain-text padding-text">',
+                                                    '<span class="glyphicon glyphicon-earphone glyphicon-green"></span>+7 (812) 406-11-70 (многоканальный)',
+                                                '</p>',
+                                                '<p class="plain-text padding-text metro">',
+                                                    '<span class="line2">Московская</span>',
+                                                '</p>',
+                                                '<p class="plain-text padding-text">',
+                                                    '<span class="glyphicon glyphicon-map-marker glyphicon-green"></span>197198, Санкт-Петербург, пр-т Ударников, дом 19, корп. 1',
+                                                '</p>',
+                                            '</div>'].join('')
+                                     }, {
+                                        preset: 'islands#violetStretchyIcon'
+                                     });
+
+                                    myMap.geoObjects.add(myPlacemark);
+
+                                    setTimeout(function(myPlacemark){
+                                      myPlacemark.balloon.open();
+                                    }, 2000, myPlacemark);
+                                });
+                        }
                     p.tab-text Деятельность акушера-гинеколога направлена на изучение полного спектра процессов, протекающих в теле женщины. Однако, основной его специализацией считается ведение беременности и родов. Помимо этого, в его компетенцию входят: поддержка репродуктивного здоровья женщины, предупреждение выкидышей и недоношенности, борьба с возможными осложнениями в течение беременности, родов, а так же послеродового периода.
                     p.tab-text Это требует немалой квалификации, и на нашем сайте вы можете посмотреть отзывы о врачах, чтобы получить уверенность в наличии необходимых умений и навыках у выбранного специалиста. Записаться на прием к доктору так же просто, достаточно указать свое имя и номер телефона для обратной связи.
 
@@ -140,7 +173,7 @@ html
                       img src="img/consalt.png" alt=""/
                       | Бесплатная консультация 
                       span.badge data-toggle="tooltip" title="Tooltip on top" ?
-              .col-xs-4.fix-offset-col15
-                img src="https://placeholdit.imgix.net/~text?txtsize=33&bg=292929&txtclr=e3e3e3&txt=275%C3%97300&w=275&h=300" alt=""/
+              .col-krosto-right.fix-offset-col15
+                img src="https://placeholdit.imgix.net/~text?txtsize=33&bg=292929&txtclr=e3e3e3&txt=240%C3%97400&w=240&h=400" alt=""/
 
     == Slim::Template.new("footer.slim").render

@@ -24,6 +24,8 @@ http://test.to4ek.net/krosto/cards_inner2.html
 
 http://test.to4ek.net/krosto/cards_cond.html
 
+http://test.to4ek.net/krosto/cards_inner_map.html
+
 http://test.to4ek.net/krosto/successful_purchase.html
 
 http://test.to4ek.net/krosto/profile.html

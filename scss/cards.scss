@@ -91,6 +91,9 @@
 	width: 45px;
 	height: 45px;
 }
+.contact-krosto {
+	margin-top: 10px;
+}
 .media-cards-clinic {
 	margin-bottom: 0;
 	.media-body {
@@ -321,5 +324,25 @@
 	.col-xs-6 {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+}
+.col-krosto-main {
+	width: 645px;
+	float: left;
+	position: relative;
+	min-height: 1px;
+}
+.col-krosto-right {
+	width: 240px;
+	float: left;
+	position: relative;
+	min-height: 1px;
+}
+#ymap-krosto {
+	width: 100%;
+	height: 300px;
+	& > ymaps {
+		border-radius: 5px;
+		overflow: hidden;
 	}
 }
