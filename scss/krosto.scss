@@ -162,3 +162,11 @@ button::-moz-focus-inner, a::-moz-focus-inner {
 a:focus, button:focus  { 
     outline: none; 
 }
+.about_reviews {
+  padding-left: 0;
+  text-align: center;
+  .media-body {
+  	width: 100%;
+  	display: block;
+  }
+}

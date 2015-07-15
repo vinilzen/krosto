@@ -4,22 +4,24 @@
 	position: relative;
 }
 .cards-info {
-	position: absolute;
-	top:0;
-	right:0;
-	background-color: rgba(0,0,0,.5);
-	display: inline-block;
-	line-height: 43px;
-	height:43px;
-	padding-left: 20px;
-	padding-right: 30px;
-	border-top-right-radius: 4px;
-	border-bottom-left-radius: 5px;
-	color: rgba(255,255,255,.7);
 	font-size: 13px;
+	padding-top: 8px;
+	padding-left: 17px;
+	padding-right: 17px;
+	position: absolute;
+	top: 139px;
+	left:0;
+	right:0;
+	width: 100%;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.18);
+	margin-bottom: -35px;
 	img {
 		margin-right: 10px;
 	}
+}
+.link-img-cards {
+	max-height: 139px;
 }
 .caption-cards {
 	padding-left: 17px;
@@ -67,7 +69,7 @@
 	}
 	span {
 		font-weight: normal;
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 .col-cards {
@@ -186,7 +188,7 @@
 			padding-right: 25px;
 			color: $text-light-gray;
 			font-size: 13px;
-			font-weight: 300;
+			// font-weight: 300;
 			min-height: 65px;
 			strong {
 				color:$text-darkblue;
@@ -242,7 +244,7 @@
 .tab-text {
 	color: $text-light-gray;
 	font-size: 13px;
-	font-weight: 300;
+	// font-weight: 300;
 	line-height: 18px;
 	margin-bottom: 20px;
 }
@@ -255,11 +257,14 @@
 .tab-list li {
 	color: $text-light-gray;
 	font-size: 13px;
-	font-weight: 300;
+	// font-weight: 300;
 	line-height: 18px;
 }
 .tab-list {
 	padding-left: 0;
+	&.tab-list-mb {
+		margin-bottom: 25px;
+	}
 	li {
 		list-style: none;
 		padding-left: 23px;
@@ -344,5 +349,19 @@
 	& > ymaps {
 		border-radius: 5px;
 		overflow: hidden;
+	}
+}
+.thumbnail-cards-balloon  {
+	border:none;
+	.h3-cards, .caption .h3-cards {
+		margin-top: 10px;
+	}
+	.cards-info {
+		position: static;
+		margin-bottom: 10px;
+		margin-top: -15px;
+	}
+	.caption-footer .media-cards-clinic {
+  		max-width: 230px;
 	}
 }

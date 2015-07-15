@@ -2,31 +2,31 @@ Krosto psd to html
 =======
 Demo:
 
-http://test.to4ek.net/krosto/index.html
+[index.html](index.html)
 
-http://test.to4ek.net/krosto/about.html
+[about.html](about.html)
 
-http://test.to4ek.net/krosto/terms.html
+[terms.html](terms.html)
 
-http://test.to4ek.net/krosto/contacts.html
+[contacts.html](contacts.html)
 
-http://test.to4ek.net/krosto/partners.html
+[partners.html](partners.html)
 
-http://test.to4ek.net/krosto/forgpass.html
+[forgpass.html](forgpass.html)
 
-http://test.to4ek.net/krosto/pay_form2.html
+[pay_form2.html](pay_form2.html)
 
-http://test.to4ek.net/krosto/pay_form3.html
+[pay_form3.html](pay_form3.html)
 
-http://test.to4ek.net/krosto/cards.html
+[cards.html](cards.html)
 
-http://test.to4ek.net/krosto/cards_inner2.html
+[cards_inner2.html](cards_inner2.html)
 
-http://test.to4ek.net/krosto/cards_cond.html
+[cards_cond.html](cards_cond.html)
 
-http://test.to4ek.net/krosto/cards_inner_map.html
+[cards_inner_map.html](cards_inner_map.html)
 
-http://test.to4ek.net/krosto/successful_purchase.html
+[successful_purchase.html](successful_purchase.html)
 
-http://test.to4ek.net/krosto/profile.html
+[profile.html](profile.html)
 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="favicon.gif" rel="icon" />
+    <title>Krosto.ru</title>
+    <meta content="width=device-width" name="viewport" />
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic-ext" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-modal.css" rel="stylesheet" />
+    <link href="css/krosto.css" rel="stylesheet" />
+    <!--[if lte IE 9] link href="css/ie9.css" rel="stylesheet"--><!--[if lt IE 9]
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+  </head>
+  <body id="doctorSearchPage">
+    <div class="header">
+      <div class="navbar" role="navigation">
+        <div class="navbar-header">
+          <span class="navbar-brand" title="Doctu.ru"><img alt="doctu.ru" src="img/logo_doctu.png" /></span>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active">
+              <a class="hand" href="partners.html">Партнерство для клиник</a>
+            </li>
+            <li>
+              <a href="about.html">О проекте</a>
+            </li>
+            <li class="krosto-city-changer">
+              <div class="city-changer">
+                <a class="showCities" href="#"> Санкт-Петербург</a>
+                <ul>
+                  <li class="selected">
+                    <a href="#">Санкт-Петербург</a>
+                  </li>
+                  <li>
+                    <a href="#">Москва</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-login">
+            <li>
+              <a class="myModalAuth" href="#">Вход / Регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <aside class="map left" id="filterAffix">
+        <div class="map" id="leftFilter">
+          <aside>
+            <div id="leftFilter">
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default open">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Фильтр поиска<span class="ico-collapse"></span></a>
+                    </h4>
+                  </div>
+                  <div class="panel-collapse collapse in lvl1" id="collapseOne">
+                    <div class="panel-body">
+                      <form role="form">
+                        <div class="form-group">
+                          <input class="form-control" id="exampleInputEmail1" placeholder="Название услуги" type="text" />
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control" data-placeholder="Специализация" id="doctorSpecialitySelectLeft" name="speciality">
+                            <option value=""></option>
+                            <option value="akusher">
+                              Акушер
+                            </option>
+                            <option value="akusher-ginekolog">
+                              Акушер-гинеколог
+                            </option>
+                            <option value="allergolog">
+                              Аллерголог
+                            </option>
+                            <option value="angioxirurg">
+                              Ангиохирург
+                            </option>
+                            <option value="androlog">
+                              Андролог
+                            </option>
+                            <option value="anesteziolog">
+                              Анестезиолог
+                            </option>
+                            <option value="venerolog">
+                              Венеролог
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control" data-placeholder="Область" disabled="disabled" id="doctorSpecialitySelectLeft" name="speciality">
+                            <option value=""></option>
+                          </select>
+                        </div>
+                        <div class="form-group" multiple="">
+                          <select class="form-control" data-placeholder="Район или метро" id="doctorMetroSelectLeft" multiple="" name="metro[]"><optgroup label="Районы">
+                              <option value=""></option>
+                              <option value="czao">
+                                ЦАО
+                              </option>
+                              <option value="svao">
+                                СВАО
+                              </option>
+                              <option value="vao">
+                                ВАО
+                              </option>
+                              <option value="yuvao">
+                                ЮВАО
+                              </option>
+                              <option value="zao">
+                                ЗАО
+                              </option>
+                              <option value="szao">
+                                СЗАО
+                              </option>
+                            </optgroup><optgroup label="Метро">
+                              <option value=""></option>
+                              <option value="alekseevskaya">
+                                Алексеевская
+                              </option>
+                              <option value="babushkinskaya">
+                                Бабушкинская
+                              </option>
+                              <option value="belorusskaya">
+                                Белорусская
+                              </option>
+                              <option value="botanicheskij-sad">
+                                Ботанический сад
+                              </option>
+                            </optgroup></select>
+                        </div>
+                        <button class="btn btn-block btn-primary" type="button"> Найти</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </aside>
+      <div id="searchResults"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript">
+      var myMap;
+      var myCollection;
+      var cityCenter = [ 59.938, 30.313 ];
+      $(document).ready(function() {
+        $(window).resize(function() {
+          $("#searchResults").height($(window).height()-62+'px');
+        }).trigger('resize');
+      });
+      
+      function initDoctorsYaMap() {
+          var myMap = new ymaps.Map('searchResults', {
+                  center: [55.753994, 37.622093],
+                  zoom: 9,
+                  controls:[],
+              }, { searchControlProvider: 'yandex#search' });
+      
+          // Поиск координат центра Нижнего Новгорода.
+          ymaps.geocode('Санкт-Петербург, пр-т Ударников, дом 19, корп. 1', {
+              results: 1 // Если нужен только один результат, экономим трафик пользователей
+          }).then(function (res) {
+                  // Выбираем первый результат геокодирования.
+                  var firstGeoObject = res.geoObjects.get(0),
+                      coords = firstGeoObject.geometry.getCoordinates(),
+                      // Область видимости геообъекта.
+                      bounds = firstGeoObject.properties.get('boundedBy');
+      
+                  // Масштабируем карту на область видимости геообъекта.
+                  myMap.setBounds(bounds, {
+                      checkZoomRange: true
+                  });
+      
+                  var myPlacemark = new ymaps.Placemark(coords, {
+                      // balloonContentHeader: "СМ-Клиника Санкт-Петербург",
+                      balloonPanelMaxMapArea: 0,
+                      balloonContent: [
+                          '<div class="thumbnail thumbnail-cards thumbnail-cards-balloon">',
+                  //'<a class="link-img-cards" href="#"><img alt="" class="img-responsive" src="img/cards.jpg"></a>',
+                  '<div class="caption caption-cards">',
+                    '<a class="h3 h3-cards" href="#">Удаление бородавки разными способами</a>',
+                    '<p class="p-cards">На приеме врач устраивает диагностику, с анализами на генетические заболевания и УЗИ включительно, и, конечно, проверяет жизнеспособность плода. </p>',
+                    //'<div class="cards-info metro">',
+                      //'<span class="pull-left line3">Василеостровская</span>',
+                      //'<p class="pull-right">Купили 14 человек</p>',
+                      //'<div class="clearfix"></div>',
+                    //'</div>',
+                    '<div class="col-sm-4 col-xs-4">',
+                      '<div class="btn btn-twoline disable">Бесплатная консультация</div>',
+                    '</div>',
+                    '<div class="col-sm-4 col-xs-4 text-center">',
+                      '<p class="p-slim text-gray text-uppercase">до 15 мая</p>',
+                      '<p class="text-green text-big">-55%</p>',
+                    '</div>',
+                    '<div class="col-sm-4 col-xs-4 text-center">',
+                      '<s class="text-gray">10 000 Р</s>',
+                      '<p><strong class="text-darkblue text-big">1 755 <span class="rub">₹</span></strong></p>',
+                    '</div>',
+                    '<div class="clearfix"></div>',
+                  '</div>',
+                  '<div class="caption-footer">',
+                    '<div class="media media-cards-clinic pull-left">',
+                      '<div class="media-left">',
+                        '<img alt="" class="cards-clinic-logo" src="img/clin.jpg">',
+                      '</div>',
+                      '<div class="media-body">',
+                        '<p class="h4-link text-darkblue">СМ-Клиника Lorem dolore sit amet donore ave to lerkim</p>',
+                      '</div>',
+                    '</div>',
+                    '<div class="btn btn-success pull-right btn-md btn-cards-down">Подробнее</div>',
+                    '<div class="clearfix"></div>',
+                  '</div>',
+                '</div>'].join('')
+                   }, {
+                      preset: 'islands#violetStretchyIcon'
+                   });
+      
+                  myMap.geoObjects.add(myPlacemark);
+      
+                  setTimeout(function(myPlacemark){
+                    myPlacemark.balloon.open();
+                  }, 2000, myPlacemark);
+              });
+      }
+      
+      ymaps.ready(initDoctorsYaMap);
+    </script>
+  </body>
+</html>

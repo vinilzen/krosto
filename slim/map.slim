@@ -1,0 +1,102 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body#doctorSearchPage
+    == Slim::Template.new("navbar.slim").render
+    div
+      aside#filterAffix.map.left
+        #leftFilter.map
+          == Slim::Template.new("left_filter.slim").render
+      #searchResults
+
+  
+    == Slim::Template.new("script.slim").render
+    script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"
+    javascript:
+          
+      var myMap;
+      var myCollection;
+      var cityCenter = [ 59.938, 30.313 ];
+      $(document).ready(function() {
+        $(window).resize(function() {
+          $("#searchResults").height($(window).height()-62+'px');
+        }).trigger('resize');
+      });
+      
+      function initDoctorsYaMap() {
+          var myMap = new ymaps.Map('searchResults', {
+                  center: [55.753994, 37.622093],
+                  zoom: 9,
+                  controls:[],
+              }, { searchControlProvider: 'yandex#search' });
+
+          // Поиск координат центра Нижнего Новгорода.
+          ymaps.geocode('Санкт-Петербург, пр-т Ударников, дом 19, корп. 1', {
+              results: 1 // Если нужен только один результат, экономим трафик пользователей
+          }).then(function (res) {
+                  // Выбираем первый результат геокодирования.
+                  var firstGeoObject = res.geoObjects.get(0),
+                      coords = firstGeoObject.geometry.getCoordinates(),
+                      // Область видимости геообъекта.
+                      bounds = firstGeoObject.properties.get('boundedBy');
+
+                  // Масштабируем карту на область видимости геообъекта.
+                  myMap.setBounds(bounds, {
+                      checkZoomRange: true
+                  });
+                  
+                  var myPlacemark = new ymaps.Placemark(coords, {
+                      // balloonContentHeader: "СМ-Клиника Санкт-Петербург",
+                      balloonPanelMaxMapArea: 0,
+                      balloonContent: [
+                          '<div class="thumbnail thumbnail-cards thumbnail-cards-balloon">',
+                  //'<a class="link-img-cards" href="#"><img alt="" class="img-responsive" src="img/cards.jpg"></a>',
+                  '<div class="caption caption-cards">',
+                    '<a class="h3 h3-cards" href="#">Удаление бородавки разными способами</a>',
+                    '<p class="p-cards">На приеме врач устраивает диагностику, с анализами на генетические заболевания и УЗИ включительно, и, конечно, проверяет жизнеспособность плода. </p>',
+                    //'<div class="cards-info metro">',
+                      //'<span class="pull-left line3">Василеостровская</span>',
+                      //'<p class="pull-right">Купили 14 человек</p>',
+                      //'<div class="clearfix"></div>',
+                    //'</div>',
+                    '<div class="col-sm-4 col-xs-4">',
+                      '<div class="btn btn-twoline disable">Бесплатная консультация</div>',
+                    '</div>',
+                    '<div class="col-sm-4 col-xs-4 text-center">',
+                      '<p class="p-slim text-gray text-uppercase">до 15 мая</p>',
+                      '<p class="text-green text-big">-55%</p>',
+                    '</div>',
+                    '<div class="col-sm-4 col-xs-4 text-center">',
+                      '<s class="text-gray">10 000 Р</s>',
+                      '<p><strong class="text-darkblue text-big">1 755 <span class="rub">₹</span></strong></p>',
+                    '</div>',
+                    '<div class="clearfix"></div>',
+                  '</div>',
+                  '<div class="caption-footer">',
+                    '<div class="media media-cards-clinic pull-left">',
+                      '<div class="media-left">',
+                        '<img alt="" class="cards-clinic-logo" src="img/clin.jpg">',
+                      '</div>',
+                      '<div class="media-body">',
+                        '<p class="h4-link text-darkblue">СМ-Клиника Lorem dolore sit amet donore ave to lerkim</p>',
+                      '</div>',
+                    '</div>',
+                    '<div class="btn btn-success pull-right btn-md btn-cards-down">Подробнее</div>',
+                    '<div class="clearfix"></div>',
+                  '</div>',
+                '</div>'].join('')
+                   }, {
+                      preset: 'islands#violetStretchyIcon'
+                   });
+
+                  myMap.geoObjects.add(myPlacemark);
+
+                  setTimeout(function(myPlacemark){
+                    myPlacemark.balloon.open();
+                  }, 2000, myPlacemark);
+              });
+      }
+
+      ymaps.ready(initDoctorsYaMap);
+                  
