@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop.container-authmodal
+      .container.main_inner
+        .row.inner-krosto.inner-full-width
+          .col-xs-12.text.main-side
+            h1.text-left.h1-krosto Вопросы ответы
+            p Использование Информационного сервиса Doctu.ru Пользователем означает, что Пользователь принимает и обязуется соблюдать все нижеприведенные условия настоящего Соглашения.
+            p Администрация Doctu.ru оставляет за собой право вносить в Соглашение изменения, которые вступают в силу с момента публикации. Дальнейшее использование вами Doctu.ru после внесения подобных изменений означает ваше согласие с ними.
+            h3 Основные термины
+            #accordion.panel-group aria-multiselectable="true" role="tablist" 
+              .panel.panel-default
+                #headingOne.panel-heading role="tab" 
+                  h4.panel-title
+                    a aria-controls="collapseOne" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button" 
+                      | Игнота промпта про йн, ыюм бонорюм бландит
+                #collapseOne.panel-collapse.collapse.in aria-labelledby="headingOne" role="tabpanel" 
+                  .panel-body
+                    p Вяш ут едквюэ эррэм минемум, нык дёжкэрэ позтюлант йн, эю кибо рыбюм вирйз ыам. Эи эжт лудуз нобёз дйжпютандо, йн квюот минемум пэр, ан эжт эвэртё пэркёпитюр. Шэа ыльит опортэат ажжынтиор ты, ыюм лаудым дэмокритум йн. Пэр примич иреуры рыпрэхэндунт ат. Игнота промпта про йн, ыюм бонорюм бландит аппэльлььантюр ат, дычэрунт пхйложопхяа мэя ед. Жят ед элитр компльыктётюр, экз мэльёуз июварыт импэрдеэт мэль.
+              .panel.panel-default
+                #headingTwo.panel-heading role="tab" 
+                  h4.panel-title
+                    a.collapsed aria-controls="collapseTwo" aria-expanded="false" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role="button" 
+                      | Кюм ыт квюиж дёжкэрэ, ыт модюж лорэм дикырыт
+                #collapseTwo.panel-collapse.collapse aria-labelledby="headingTwo" role="tabpanel" 
+                  .panel-body
+                    p Вэл натюм клита аккоммодары ед. Кюм ыт квюиж дёжкэрэ, ыт модюж лорэм дикырыт ыюм, рыбюм эррэм убяквюэ хёз ат. Эю фалля црял эффякиантур еюж, дюиж лорэм нык нэ, мэя натюм ыкжпэтэндяз дёжжэнтиюнт экз. Дуо ут кашы ёудёкабет консэквюат, ад эжт индоктум конжтетуто, прё ты одео попюльо адмодум. Дуо промпта номинави дыфинитеоным ут, ыт квюо юллюм рэктэквуэ, чент оффэндйт пэркйпет ючю нэ. Эю емпэтюсъ майыжтатйж эжт, ридэнж пэркёпитюр аппэльлььантюр нам йн.
+              .panel.panel-default
+                #headingThree.panel-heading role="tab" 
+                  h4.panel-title
+                    a.collapsed aria-controls="collapseThree" aria-expanded="false" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role="button" 
+                      | Хаж ут алёа конгуы форынчйбюж
+                #collapseThree.panel-collapse.collapse aria-labelledby="headingThree" role="tabpanel" 
+                  .panel-body
+                    p Хаж ут алёа конгуы форынчйбюж. Эа хёз кашы мовэт июварыт, эю дуо эрож лудуз. Нык альяквюам вэрйтюж ад, эжт ед ыльит мюкиуж ыкжпэтэндяз. Латины шапэрэт волумюч пэр экз, аликвюип ютроквюы ыкжпэтэндяз кюм ут. Мыа примич пэрпэтюа ан.
+                    p Граэкйж анкилльаы эа хёз, жят ат кашы индоктум. Прё путант волуптюа ан, эа эож попюльо эрепюят. Ан нам дыкоры экшырки волуптариа, экз векж нобёз тинкидюнт, унюм пэркйпет ут векж. Мэя нюлльа нужквюам ат, доктюж аргюмынтум эож эю. Квюо золэт аэтырно дычэрунт ут, агам декта эю хаж, зыд йн дёкант мныжаркхюм. Пожжэ дэлььынётё ед зыд, жят вэниам экшырки но.
+              .panel.panel-default
+                #headingFour.panel-heading role="tab" 
+                  h4.panel-title
+                    a.collapsed aria-controls="collapseFour" aria-expanded="false" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role="button" 
+                      | Ипр квюиж дёжкэрэ, ыт модюж лорэм дикырыт
+                #collapseFour.panel-collapse.collapse aria-labelledby="headingTwo" role="tabpanel" 
+                  .panel-body
+                    p Вэл натюм клита аккоммодары ед. Кюм ыт квюиж дёжкэрэ, ыт модюж лорэм дикырыт ыюм, рыбюм эррэм убяквюэ хёз ат. Эю фалля црял эффякиантур еюж, дюиж лорэм нык нэ, мэя натюм ыкжпэтэндяз дёжжэнтиюнт экз. Дуо ут кашы ёудёкабет консэквюат, ад эжт индоктум конжтетуто, прё ты одео попюльо адмодум. Дуо промпта номинави дыфинитеоным ут, ыт квюо юллюм рэктэквуэ, чент оффэндйт пэркйпет ючю нэ. Эю емпэтюсъ майыжтатйж эжт, ридэнж пэркёпитюр аппэльлььантюр нам йн.
+
+
+
+
+    == Slim::Template.new("footer.slim").render

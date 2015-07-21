@@ -26,7 +26,13 @@ Demo:
 
 [cards_inner_map.html](cards_inner_map.html)
 
+[cards_inner_map_new.html](cards_inner_map_new.html)
+
 [successful_purchase.html](successful_purchase.html)
 
 [profile.html](profile.html)
+
+[faq.html](faq.html)
+
+[map.html](map.html)
 

@@ -101,6 +101,24 @@ $(function(){
 
 
 	$('[data-toggle="tooltip"]').tooltip();
+	
+	if ( $('#popoveBook').length > 0 ) {
+
+		$('#popoveBook').popover({
+			viewport: '.main-side',
+			content: function(){
+				return $('#more').html();
+			}
+		}).on('shown.bs.popover', function(){
+			$('.popoveBook .close').click(function(){
+				$('#popoveBook').popover('hide');
+			});
+		})
+			.data('bs.popover')
+	  		.tip()
+	  		.addClass('popoveBook');
+	}
+
 
 	
 	$('.myModalAuth').click(function(){
@@ -136,5 +154,13 @@ $(function(){
 		$('.city-changer-cities ul').fadeOut();
 	});
 
+
+	$('.panel-accordion .panel-collapse')
+		.on('show.bs.collapse', function(e){
+			$(e.target).closest('.panel').addClass('open');
+		})
+		.on('hide.bs.collapse', function(e){
+			$(e.target).closest('.panel').removeClass('open');
+		});
 
 });
