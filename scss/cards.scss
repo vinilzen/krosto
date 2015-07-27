@@ -494,6 +494,20 @@
 		margin-top: 1px;
 	}
 }
+
+.popover.popoverPay {
+	max-width: 800px;
+	min-width: 720px;
+	.pay {
+		padding: 30px 0px 0;
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			margin-bottom: 0;
+		}
+	}
+}
 .popover.popoveBook {
 	max-width: 800px;
 	min-width: 720px;

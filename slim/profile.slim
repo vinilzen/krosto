@@ -75,7 +75,7 @@ html
                                 td
                                   p.p-slim.text-dark 14 500 Р
                                 td
-                                  a.btn.btn-success Оплатить
+                                  a.btn.btn-success#popoverPay data-toggle="popover" data-html="true" data-placement="bottom" Оплатить
                               tr.disable
                                 td Первичный осмотр
                                 td
@@ -94,7 +94,36 @@ html
                                   .btn.btn-gray.text-uppercase
                                     span.glyphicon.glyphicon-download-alt
                                     |  скачать
-
+                        #content_pay.hide
+                          .row
+                            .col-xs-12
+                              .thumbnail.thumbnail-cards
+                                .caption.pay
+                                  .col-xs-3
+                                    p
+                                      a href="#" QIWI Кошелек
+                                      br
+                                      a.pay_logo href="#"
+                                        img src="img/qiwi_logo.png" alt=""/
+                                  .col-xs-3
+                                    p
+                                      a href="#" Яндекс. Деньги
+                                      br
+                                      a.pay_logo href="#"
+                                        img src="img/yadengi_logo.png" alt=""/
+                                  .col-xs-3
+                                    p
+                                      a href="#" Банковская карта
+                                      br
+                                      a.pay_logo href="#"
+                                        img src="img/card_logo.png" alt=""/
+                                  .col-xs-3
+                                    p
+                                      a href="#" Банковский перевод
+                                      br
+                                      a.pay_logo href="#"
+                                        img src="img/vtb_logo.png" alt=""/
+                                  .clearfix
                     .collapsed-krosto
                       .collapsed-krosto-head
                         .col-xs-6

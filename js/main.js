@@ -119,6 +119,23 @@ $(function(){
 	  		.addClass('popoveBook');
 	}
 
+	if ( $('#popoverPay').length > 0 ) {
+
+		$('#popoverPay').popover({
+			viewport: '.main-side',
+			content: function(){
+				return $('#content_pay').html();
+			}
+		}).on('shown.bs.popover', function(){
+			$('.popoverPay .close').click(function(){
+				$('#popoverPay').popover('hide');
+			});
+		})
+			.data('bs.popover')
+	  		.tip()
+	  		.addClass('popoverPay');
+	}
+
 
 	
 	$('.myModalAuth').click(function(){
